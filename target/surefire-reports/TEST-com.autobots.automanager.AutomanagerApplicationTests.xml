@@ -1,0 +1,2540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.autobots.automanager.AutomanagerApplicationTests" time="5.366" tests="12" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\enric\OneDrive\Documents\GitHub\AV4-WEBIII\target\test-classes;C:\Users\enric\OneDrive\Documents\GitHub\AV4-WEBIII\target\classes;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.0\spring-boot-starter-web-3.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.0\spring-boot-starter-3.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot\3.2.0\spring-boot-3.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.0\spring-boot-autoconfigure-3.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.0\spring-boot-starter-logging-3.2.0.jar;C:\Users\enric\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;C:\Users\enric\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;C:\Users\enric\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\enric\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\enric\.m2\repository\org\slf4j\jul-to-slf4j\2.0.9\jul-to-slf4j-2.0.9.jar;C:\Users\enric\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\enric\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.0\spring-boot-starter-json-3.2.0.jar;C:\Users\enric\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.3\jackson-datatype-jdk8-2.15.3.jar;C:\Users\enric\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.3\jackson-datatype-jsr310-2.15.3.jar;C:\Users\enric\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.3\jackson-module-parameter-names-2.15.3.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.0\spring-boot-starter-tomcat-3.2.0.jar;C:\Users\enric\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.16\tomcat-embed-core-10.1.16.jar;C:\Users\enric\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.16\tomcat-embed-el-10.1.16.jar;C:\Users\enric\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.16\tomcat-embed-websocket-10.1.16.jar;C:\Users\enric\.m2\repository\org\springframework\spring-web\6.1.1\spring-web-6.1.1.jar;C:\Users\enric\.m2\repository\org\springframework\spring-beans\6.1.1\spring-beans-6.1.1.jar;C:\Users\enric\.m2\repository\io\micrometer\micrometer-observation\1.12.0\micrometer-observation-1.12.0.jar;C:\Users\enric\.m2\repository\io\micrometer\micrometer-commons\1.12.0\micrometer-commons-1.12.0.jar;C:\Users\enric\.m2\repository\org\springframework\spring-webmvc\6.1.1\spring-webmvc-6.1.1.jar;C:\Users\enric\.m2\repository\org\springframework\spring-context\6.1.1\spring-context-6.1.1.jar;C:\Users\enric\.m2\repository\org\springframework\spring-expression\6.1.1\spring-expression-6.1.1.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-starter-hateoas\3.2.0\spring-boot-starter-hateoas-3.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\hateoas\spring-hateoas\2.2.0\spring-hateoas-2.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\plugin\spring-plugin-core\3.0.0\spring-plugin-core-3.0.0.jar;C:\Users\enric\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.2.0\spring-boot-starter-security-3.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\spring-aop\6.1.1\spring-aop-6.1.1.jar;C:\Users\enric\.m2\repository\org\springframework\security\spring-security-config\6.2.0\spring-security-config-6.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\security\spring-security-web\6.2.0\spring-security-web-6.2.0.jar;C:\Users\enric\.m2\repository\io\jsonwebtoken\jjwt-api\0.11.5\jjwt-api-0.11.5.jar;C:\Users\enric\.m2\repository\io\jsonwebtoken\jjwt-impl\0.11.5\jjwt-impl-0.11.5.jar;C:\Users\enric\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.11.5\jjwt-jackson-0.11.5.jar;C:\Users\enric\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\enric\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\enric\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.0\spring-boot-starter-data-jpa-3.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.0\spring-boot-starter-aop-3.2.0.jar;C:\Users\enric\.m2\repository\org\aspectj\aspectjweaver\1.9.20.1\aspectjweaver-1.9.20.1.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.0\spring-boot-starter-jdbc-3.2.0.jar;C:\Users\enric\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\enric\.m2\repository\org\springframework\spring-jdbc\6.1.1\spring-jdbc-6.1.1.jar;C:\Users\enric\.m2\repository\org\hibernate\orm\hibernate-core\6.3.1.Final\hibernate-core-6.3.1.Final.jar;C:\Users\enric\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\enric\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\enric\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\enric\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\enric\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\enric\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\enric\.m2\repository\net\bytebuddy\byte-buddy\1.14.10\byte-buddy-1.14.10.jar;C:\Users\enric\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;C:\Users\enric\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;C:\Users\enric\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\enric\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;C:\Users\enric\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\enric\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\enric\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\enric\.m2\repository\org\springframework\data\spring-data-jpa\3.2.0\spring-data-jpa-3.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\data\spring-data-commons\3.2.0\spring-data-commons-3.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\spring-orm\6.1.1\spring-orm-6.1.1.jar;C:\Users\enric\.m2\repository\org\springframework\spring-tx\6.1.1\spring-tx-6.1.1.jar;C:\Users\enric\.m2\repository\org\springframework\spring-aspects\6.1.1\spring-aspects-6.1.1.jar;C:\Users\enric\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\enric\.m2\repository\org\projectlombok\lombok\1.18.44\lombok-1.18.44.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.0\spring-boot-starter-test-3.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-test\3.2.0\spring-boot-test-3.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.0\spring-boot-test-autoconfigure-3.2.0.jar;C:\Users\enric\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\enric\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\enric\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\enric\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\enric\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\enric\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\enric\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\enric\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\enric\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\enric\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.1\junit-jupiter-5.10.1.jar;C:\Users\enric\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\enric\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\enric\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\enric\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\enric\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;C:\Users\enric\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;C:\Users\enric\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;C:\Users\enric\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\enric\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar;C:\Users\enric\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\enric\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\enric\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\enric\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\enric\.m2\repository\org\springframework\spring-core\6.1.1\spring-core-6.1.1.jar;C:\Users\enric\.m2\repository\org\springframework\spring-jcl\6.1.1\spring-jcl-6.1.1.jar;C:\Users\enric\.m2\repository\org\springframework\spring-test\6.1.1\spring-test-6.1.1.jar;C:\Users\enric\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\enric\.m2\repository\org\springframework\security\spring-security-test\6.2.0\spring-security-test-6.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\security\spring-security-core\6.2.0\spring-security-core-6.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\security\spring-security-crypto\6.2.0\spring-security-crypto-6.2.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-25.0.2\bin"/>
+    <property name="sun.java.command" value="C:\Users\enric\AppData\Local\Temp\surefire5147133239903192118\surefirebooter-20260609092657872_3.jar C:\Users\enric\AppData\Local\Temp\surefire5147133239903192118 2026-06-09T09-26-57_794-jvmRun1 surefire-20260609092657872_1tmp surefire_0-20260609092657872_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\enric\OneDrive\Documents\GitHub\AV4-WEBIII\target\test-classes;C:\Users\enric\OneDrive\Documents\GitHub\AV4-WEBIII\target\classes;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.0\spring-boot-starter-web-3.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.0\spring-boot-starter-3.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot\3.2.0\spring-boot-3.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.0\spring-boot-autoconfigure-3.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.0\spring-boot-starter-logging-3.2.0.jar;C:\Users\enric\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;C:\Users\enric\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;C:\Users\enric\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\enric\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\enric\.m2\repository\org\slf4j\jul-to-slf4j\2.0.9\jul-to-slf4j-2.0.9.jar;C:\Users\enric\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\enric\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.0\spring-boot-starter-json-3.2.0.jar;C:\Users\enric\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.3\jackson-datatype-jdk8-2.15.3.jar;C:\Users\enric\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.3\jackson-datatype-jsr310-2.15.3.jar;C:\Users\enric\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.3\jackson-module-parameter-names-2.15.3.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.0\spring-boot-starter-tomcat-3.2.0.jar;C:\Users\enric\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.16\tomcat-embed-core-10.1.16.jar;C:\Users\enric\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.16\tomcat-embed-el-10.1.16.jar;C:\Users\enric\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.16\tomcat-embed-websocket-10.1.16.jar;C:\Users\enric\.m2\repository\org\springframework\spring-web\6.1.1\spring-web-6.1.1.jar;C:\Users\enric\.m2\repository\org\springframework\spring-beans\6.1.1\spring-beans-6.1.1.jar;C:\Users\enric\.m2\repository\io\micrometer\micrometer-observation\1.12.0\micrometer-observation-1.12.0.jar;C:\Users\enric\.m2\repository\io\micrometer\micrometer-commons\1.12.0\micrometer-commons-1.12.0.jar;C:\Users\enric\.m2\repository\org\springframework\spring-webmvc\6.1.1\spring-webmvc-6.1.1.jar;C:\Users\enric\.m2\repository\org\springframework\spring-context\6.1.1\spring-context-6.1.1.jar;C:\Users\enric\.m2\repository\org\springframework\spring-expression\6.1.1\spring-expression-6.1.1.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-starter-hateoas\3.2.0\spring-boot-starter-hateoas-3.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\hateoas\spring-hateoas\2.2.0\spring-hateoas-2.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\plugin\spring-plugin-core\3.0.0\spring-plugin-core-3.0.0.jar;C:\Users\enric\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.2.0\spring-boot-starter-security-3.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\spring-aop\6.1.1\spring-aop-6.1.1.jar;C:\Users\enric\.m2\repository\org\springframework\security\spring-security-config\6.2.0\spring-security-config-6.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\security\spring-security-web\6.2.0\spring-security-web-6.2.0.jar;C:\Users\enric\.m2\repository\io\jsonwebtoken\jjwt-api\0.11.5\jjwt-api-0.11.5.jar;C:\Users\enric\.m2\repository\io\jsonwebtoken\jjwt-impl\0.11.5\jjwt-impl-0.11.5.jar;C:\Users\enric\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.11.5\jjwt-jackson-0.11.5.jar;C:\Users\enric\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\enric\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\enric\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.0\spring-boot-starter-data-jpa-3.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.0\spring-boot-starter-aop-3.2.0.jar;C:\Users\enric\.m2\repository\org\aspectj\aspectjweaver\1.9.20.1\aspectjweaver-1.9.20.1.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.0\spring-boot-starter-jdbc-3.2.0.jar;C:\Users\enric\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\enric\.m2\repository\org\springframework\spring-jdbc\6.1.1\spring-jdbc-6.1.1.jar;C:\Users\enric\.m2\repository\org\hibernate\orm\hibernate-core\6.3.1.Final\hibernate-core-6.3.1.Final.jar;C:\Users\enric\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\enric\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\enric\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\enric\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\enric\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\enric\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\enric\.m2\repository\net\bytebuddy\byte-buddy\1.14.10\byte-buddy-1.14.10.jar;C:\Users\enric\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;C:\Users\enric\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;C:\Users\enric\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\enric\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;C:\Users\enric\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\enric\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\enric\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\enric\.m2\repository\org\springframework\data\spring-data-jpa\3.2.0\spring-data-jpa-3.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\data\spring-data-commons\3.2.0\spring-data-commons-3.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\spring-orm\6.1.1\spring-orm-6.1.1.jar;C:\Users\enric\.m2\repository\org\springframework\spring-tx\6.1.1\spring-tx-6.1.1.jar;C:\Users\enric\.m2\repository\org\springframework\spring-aspects\6.1.1\spring-aspects-6.1.1.jar;C:\Users\enric\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\enric\.m2\repository\org\projectlombok\lombok\1.18.44\lombok-1.18.44.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.0\spring-boot-starter-test-3.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-test\3.2.0\spring-boot-test-3.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.0\spring-boot-test-autoconfigure-3.2.0.jar;C:\Users\enric\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\enric\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\enric\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\enric\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\enric\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\enric\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\enric\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\enric\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\enric\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\enric\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.1\junit-jupiter-5.10.1.jar;C:\Users\enric\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\enric\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\enric\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\enric\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\enric\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;C:\Users\enric\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;C:\Users\enric\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;C:\Users\enric\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\enric\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar;C:\Users\enric\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\enric\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\enric\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\enric\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\enric\.m2\repository\org\springframework\spring-core\6.1.1\spring-core-6.1.1.jar;C:\Users\enric\.m2\repository\org\springframework\spring-jcl\6.1.1\spring-jcl-6.1.1.jar;C:\Users\enric\.m2\repository\org\springframework\spring-test\6.1.1\spring-test-6.1.1.jar;C:\Users\enric\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\enric\.m2\repository\org\springframework\security\spring-security-test\6.2.0\spring-security-test-6.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\security\spring-security-core\6.2.0\spring-security-core-6.2.0.jar;C:\Users\enric\.m2\repository\org\springframework\security\spring-security-crypto\6.2.0\spring-security-crypto-6.2.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\enric"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-25.0.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\enric\OneDrive\Documents\GitHub\AV4-WEBIII"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\enric\AppData\Local\Temp\surefire5147133239903192118\surefirebooter-20260609092657872_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.2+10-LTS-69"/>
+    <property name="user.name" value="enric"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\enric\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\enric\AppData\Local\Temp\"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="25.0.2"/>
+    <property name="user.dir" value="C:\Users\enric\OneDrive\Documents\GitHub\AV4-WEBIII"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="8096"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-25.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/enric/.gemini/antigravity-cli/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python314\Scripts\;C:\Python314\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\Docker\Docker\resources\bin;C:\Users\enric\AppData\Local\agy\bin;C:\Users\enric\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\enric\AppData\Local\Programs\Python\Python311\;C:\Users\enric\AppData\Local\Microsoft\WindowsApps;C:\Users\enric\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\enric\AppData\Roaming\npm;C:\Program Files\Airshipper;C:\Users\enric\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2025.3.2\bin;C:\Users\enric\.dotnet\tools;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.0.2+10-LTS-69"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[automanager] "/>
+  </properties>
+  <testcase name="testMercadoriaEndpoint" classname="com.autobots.automanager.AutomanagerApplicationTests" time="0.414">
+    <system-out><![CDATA[09:26:58.503 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.autobots.automanager.AutomanagerApplicationTests]: AutomanagerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:26:58.590 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.autobots.automanager.AutomanagerApplication for test class com.autobots.automanager.AutomanagerApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2026-06-09T09:26:58.894-03:00  INFO 8096 --- [automanager] [           main] c.a.a.AutomanagerApplicationTests        : Starting AutomanagerApplicationTests using Java 25.0.2 with PID 8096 (started by enric in C:\Users\enric\OneDrive\Documents\GitHub\AV4-WEBIII)
+2026-06-09T09:26:58.894-03:00  INFO 8096 --- [automanager] [           main] c.a.a.AutomanagerApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2026-06-09T09:26:59.485-03:00  INFO 8096 --- [automanager] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-09T09:26:59.551-03:00  INFO 8096 --- [automanager] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 10 JPA repository interfaces.
+2026-06-09T09:26:59.995-03:00  INFO 8096 --- [automanager] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-09T09:27:00.067-03:00  INFO 8096 --- [automanager] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-06-09T09:27:00.106-03:00  INFO 8096 --- [automanager] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-09T09:27:00.332-03:00  INFO 8096 --- [automanager] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-09T09:27:00.349-03:00  INFO 8096 --- [automanager] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-09T09:27:00.498-03:00  INFO 8096 --- [automanager] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:automanagerdb user=SA
+2026-06-09T09:27:00.499-03:00  INFO 8096 --- [automanager] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-09T09:27:00.513-03:00  WARN 8096 --- [automanager] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-09T09:27:01.275-03:00  INFO 8096 --- [automanager] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists credenciais cascade 
+Hibernate: 
+    drop table if exists documentos cascade 
+Hibernate: 
+    drop table if exists empresa_mercadorias cascade 
+Hibernate: 
+    drop table if exists empresa_servicos cascade 
+Hibernate: 
+    drop table if exists empresa_telefones cascade 
+Hibernate: 
+    drop table if exists empresa_usuarios cascade 
+Hibernate: 
+    drop table if exists empresa_vendas cascade 
+Hibernate: 
+    drop table if exists empresas cascade 
+Hibernate: 
+    drop table if exists enderecos cascade 
+Hibernate: 
+    drop table if exists mercadorias cascade 
+Hibernate: 
+    drop table if exists servicos cascade 
+Hibernate: 
+    drop table if exists telefones cascade 
+Hibernate: 
+    drop table if exists usuario_documentos cascade 
+Hibernate: 
+    drop table if exists usuario_telefones cascade 
+Hibernate: 
+    drop table if exists usuario_tipos cascade 
+Hibernate: 
+    drop table if exists usuario_veiculos cascade 
+Hibernate: 
+    drop table if exists usuarios cascade 
+Hibernate: 
+    drop table if exists veiculos cascade 
+Hibernate: 
+    drop table if exists venda_mercadorias cascade 
+Hibernate: 
+    drop table if exists venda_servicos cascade 
+Hibernate: 
+    drop table if exists vendas cascade 
+Hibernate: 
+    create table credenciais (
+        id bigint generated by default as identity,
+        nome_usuario varchar(255) not null unique,
+        senha varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table documentos (
+        id bigint generated by default as identity,
+        numero varchar(255) not null unique,
+        tipo varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table empresa_mercadorias (
+        empresa_id bigint not null,
+        mercadoria_id bigint not null
+    )
+Hibernate: 
+    create table empresa_servicos (
+        empresa_id bigint not null,
+        servico_id bigint not null
+    )
+Hibernate: 
+    create table empresa_telefones (
+        empresa_id bigint not null,
+        telefone_id bigint not null
+    )
+Hibernate: 
+    create table empresa_usuarios (
+        empresa_id bigint not null,
+        usuario_id bigint not null
+    )
+Hibernate: 
+    create table empresa_vendas (
+        empresa_id bigint not null,
+        venda_id bigint not null
+    )
+Hibernate: 
+    create table empresas (
+        endereco_id bigint,
+        id bigint generated by default as identity,
+        cnpj varchar(255) not null unique,
+        nome_fantasia varchar(255) not null,
+        razao_social varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table enderecos (
+        estado varchar(2) not null,
+        id bigint generated by default as identity,
+        bairro varchar(255) not null,
+        cidade varchar(255) not null,
+        codigo_postal varchar(255),
+        informacoes_adicionais varchar(255),
+        numero varchar(255) not null,
+        rua varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table mercadorias (
+        quantidade integer not null,
+        validade date,
+        valor float(53) not null,
+        cadastro timestamp(6),
+        id bigint generated by default as identity,
+        descricao varchar(255) not null,
+        fabricante varchar(255) not null,
+        nome varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table servicos (
+        valor float(53) not null,
+        cadastro timestamp(6),
+        id bigint generated by default as identity,
+        descricao varchar(255) not null,
+        nome varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table telefones (
+        ddd varchar(2) not null,
+        id bigint generated by default as identity,
+        numero varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table usuario_documentos (
+        documento_id bigint not null,
+        usuario_id bigint not null
+    )
+Hibernate: 
+    create table usuario_telefones (
+        telefone_id bigint not null,
+        usuario_id bigint not null
+    )
+Hibernate: 
+    create table usuario_tipos (
+        usuario_id bigint not null,
+        perfil varchar(255) check (perfil in ('ADMINISTRADOR','GERENTE','VENDEDOR','CLIENTE'))
+    )
+Hibernate: 
+    create table usuario_veiculos (
+        usuario_id bigint not null,
+        veiculo_id bigint not null
+    )
+Hibernate: 
+    create table usuarios (
+        data_nascimento date,
+        credencial_id bigint,
+        data_cadastro timestamp(6),
+        endereco_id bigint,
+        id bigint generated by default as identity,
+        email varchar(255) not null unique,
+        nome varchar(255) not null,
+        nome_social varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table veiculos (
+        id bigint generated by default as identity,
+        ano_fabricacao varchar(255),
+        fabricante varchar(255) not null,
+        modelo varchar(255) not null,
+        placa varchar(255) not null unique,
+        primary key (id)
+    )
+Hibernate: 
+    create table venda_mercadorias (
+        mercadoria_id bigint not null,
+        venda_id bigint not null
+    )
+Hibernate: 
+    create table venda_servicos (
+        servico_id bigint not null,
+        venda_id bigint not null
+    )
+Hibernate: 
+    create table vendas (
+        cadastro timestamp(6),
+        cliente_id bigint,
+        funcionario_id bigint,
+        id bigint generated by default as identity,
+        veiculo_id bigint,
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists empresa_mercadorias 
+       add constraint FKoo2wk3w5g3km74ylbycxrqef2 
+       foreign key (mercadoria_id) 
+       references mercadorias
+Hibernate: 
+    alter table if exists empresa_mercadorias 
+       add constraint FKi2d6yjg0jii072vtod856c4dy 
+       foreign key (empresa_id) 
+       references empresas
+Hibernate: 
+    alter table if exists empresa_servicos 
+       add constraint FKplw0tt4ty5ctp1aqc48329h1r 
+       foreign key (servico_id) 
+       references servicos
+Hibernate: 
+    alter table if exists empresa_servicos 
+       add constraint FKfklvvk1ybdayob4xm40ne7lvf 
+       foreign key (empresa_id) 
+       references empresas
+Hibernate: 
+    alter table if exists empresa_telefones 
+       add constraint FKl7axivuc5ifmvlmydns0clggr 
+       foreign key (telefone_id) 
+       references telefones
+Hibernate: 
+    alter table if exists empresa_telefones 
+       add constraint FK90vyie1vsff9ks4q1yina3l6w 
+       foreign key (empresa_id) 
+       references empresas
+Hibernate: 
+    alter table if exists empresa_usuarios 
+       add constraint FKpt7i7h5ta1ht6odsdtro5se3h 
+       foreign key (usuario_id) 
+       references usuarios
+Hibernate: 
+    alter table if exists empresa_usuarios 
+       add constraint FK5uap11o989ucn3esq472e90d8 
+       foreign key (empresa_id) 
+       references empresas
+Hibernate: 
+    alter table if exists empresa_vendas 
+       add constraint FKgg2smlkaywe36q6gjvc52hldd 
+       foreign key (venda_id) 
+       references vendas
+Hibernate: 
+    alter table if exists empresa_vendas 
+       add constraint FKnrc5l1nnj6ac4k2mdy4bg97me 
+       foreign key (empresa_id) 
+       references empresas
+Hibernate: 
+    alter table if exists empresas 
+       add constraint FKkjdn9g6ais9p4v32pn43tumsx 
+       foreign key (endereco_id) 
+       references enderecos
+Hibernate: 
+    alter table if exists usuario_documentos 
+       add constraint FKhv00u175iw20gyau45ppx88ay 
+       foreign key (documento_id) 
+       references documentos
+Hibernate: 
+    alter table if exists usuario_documentos 
+       add constraint FKau1ibgstv3aw58r3b7ba5i05i 
+       foreign key (usuario_id) 
+       references usuarios
+Hibernate: 
+    alter table if exists usuario_telefones 
+       add constraint FK7n0dknmtaf2onhyadhba6ffc6 
+       foreign key (telefone_id) 
+       references telefones
+Hibernate: 
+    alter table if exists usuario_telefones 
+       add constraint FKqe39tdet0jqwfv5n94fnx2dnp 
+       foreign key (usuario_id) 
+       references usuarios
+Hibernate: 
+    alter table if exists usuario_tipos 
+       add constraint FKbxfa706oyq21b4nlihum2gg2l 
+       foreign key (usuario_id) 
+       references usuarios
+Hibernate: 
+    alter table if exists usuario_veiculos 
+       add constraint FKdj0755f49lfu793pol68qlgdv 
+       foreign key (veiculo_id) 
+       references veiculos
+Hibernate: 
+    alter table if exists usuario_veiculos 
+       add constraint FK54qc1vuw8vdum9jl80kvhwf16 
+       foreign key (usuario_id) 
+       references usuarios
+Hibernate: 
+    alter table if exists usuarios 
+       add constraint FKibnme690ei6adnb0apsp2tsqm 
+       foreign key (credencial_id) 
+       references credenciais
+Hibernate: 
+    alter table if exists usuarios 
+       add constraint FK6xhgjg1rqryw943qnwe5nujpc 
+       foreign key (endereco_id) 
+       references enderecos
+Hibernate: 
+    alter table if exists venda_mercadorias 
+       add constraint FKh446l27a8typg6rnb15eok1pf 
+       foreign key (mercadoria_id) 
+       references mercadorias
+Hibernate: 
+    alter table if exists venda_mercadorias 
+       add constraint FK3hydln15wjgday4pfg17od3db 
+       foreign key (venda_id) 
+       references vendas
+Hibernate: 
+    alter table if exists venda_servicos 
+       add constraint FK9iil0nrwu2qaqup35fqas0tqe 
+       foreign key (servico_id) 
+       references servicos
+Hibernate: 
+    alter table if exists venda_servicos 
+       add constraint FK93wrfv9pl6vvdj5yrjjqel7tq 
+       foreign key (venda_id) 
+       references vendas
+Hibernate: 
+    alter table if exists vendas 
+       add constraint FKf3wl5tnywcbyq6cshfd6axq4p 
+       foreign key (cliente_id) 
+       references usuarios
+Hibernate: 
+    alter table if exists vendas 
+       add constraint FK4705hjc59s85qr61o2jeyrry0 
+       foreign key (funcionario_id) 
+       references usuarios
+Hibernate: 
+    alter table if exists vendas 
+       add constraint FK6sefd9hgm1cnkdn1t32612yt9 
+       foreign key (veiculo_id) 
+       references veiculos
+2026-06-09T09:27:01.361-03:00  INFO 8096 --- [automanager] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-09T09:27:02.026-03:00  WARN 8096 --- [automanager] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-09T09:27:02.115-03:00  WARN 8096 --- [automanager] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c64bdf57-7569-4b34-b43a-349473a275bb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-09T09:27:02.374-03:00  INFO 8096 --- [automanager] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@49522bdf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77587422, org.springframework.security.web.context.SecurityContextHolderFilter@2044f708, org.springframework.security.web.header.HeaderWriterFilter@40874f54, org.springframework.web.filter.CorsFilter@39eea4f6, org.springframework.security.web.authentication.logout.LogoutFilter@665c79a2, com.autobots.automanager.seguranca.JwtAuthenticationFilter@13d1653, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18bab95b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70e07ef8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c94d4b8, org.springframework.security.web.session.SessionManagementFilter@183e64a8, org.springframework.security.web.access.ExceptionTranslationFilter@5c8859b4, org.springframework.security.web.access.intercept.AuthorizationFilter@14e54a35]
+2026-06-09T09:27:02.673-03:00  INFO 8096 --- [automanager] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-06-09T09:27:02.673-03:00  INFO 8096 --- [automanager] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-06-09T09:27:02.674-03:00  INFO 8096 --- [automanager] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-06-09T09:27:02.687-03:00  INFO 8096 --- [automanager] [           main] c.a.a.AutomanagerApplicationTests        : Started AutomanagerApplicationTests in 4.0 seconds (process running for 4.732)
+Hibernate: 
+    insert 
+    into
+        enderecos
+        (bairro, cidade, codigo_postal, estado, informacoes_adicionais, numero, rua, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        enderecos
+        (bairro, cidade, codigo_postal, estado, informacoes_adicionais, numero, rua, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        telefones
+        (ddd, numero, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    insert 
+    into
+        telefones
+        (ddd, numero, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    insert 
+    into
+        mercadorias
+        (cadastro, descricao, fabricante, nome, quantidade, validade, valor, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        mercadorias
+        (cadastro, descricao, fabricante, nome, quantidade, validade, valor, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        servicos
+        (cadastro, descricao, nome, valor, id) 
+    values
+        (?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        servicos
+        (cadastro, descricao, nome, valor, id) 
+    values
+        (?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        credenciais
+        (nome_usuario, senha, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    insert 
+    into
+        credenciais
+        (nome_usuario, senha, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    insert 
+    into
+        credenciais
+        (nome_usuario, senha, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    insert 
+    into
+        credenciais
+        (nome_usuario, senha, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    insert 
+    into
+        documentos
+        (numero, tipo, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    insert 
+    into
+        veiculos
+        (ano_fabricacao, fabricante, modelo, placa, id) 
+    values
+        (?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        veiculos
+        (ano_fabricacao, fabricante, modelo, placa, id) 
+    values
+        (?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        usuarios
+        (credencial_id, data_cadastro, data_nascimento, email, endereco_id, nome, nome_social, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        usuario_tipos
+        (usuario_id, perfil) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        usuarios
+        (credencial_id, data_cadastro, data_nascimento, email, endereco_id, nome, nome_social, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        usuario_tipos
+        (usuario_id, perfil) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        usuario_telefones
+        (usuario_id, telefone_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        usuarios
+        (credencial_id, data_cadastro, data_nascimento, email, endereco_id, nome, nome_social, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        usuario_tipos
+        (usuario_id, perfil) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        usuario_veiculos
+        (usuario_id, veiculo_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        usuarios
+        (credencial_id, data_cadastro, data_nascimento, email, endereco_id, nome, nome_social, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        usuario_documentos
+        (usuario_id, documento_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        usuario_tipos
+        (usuario_id, perfil) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        usuario_telefones
+        (usuario_id, telefone_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        usuario_veiculos
+        (usuario_id, veiculo_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        empresas
+        (cnpj, endereco_id, nome_fantasia, razao_social, id) 
+    values
+        (?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        empresa_mercadorias
+        (empresa_id, mercadoria_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        empresa_mercadorias
+        (empresa_id, mercadoria_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        empresa_servicos
+        (empresa_id, servico_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        empresa_servicos
+        (empresa_id, servico_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        empresa_telefones
+        (empresa_id, telefone_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        empresa_usuarios
+        (empresa_id, usuario_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        empresa_usuarios
+        (empresa_id, usuario_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        empresa_usuarios
+        (empresa_id, usuario_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        empresa_usuarios
+        (empresa_id, usuario_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        vendas
+        (cadastro, cliente_id, funcionario_id, veiculo_id, id) 
+    values
+        (?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        venda_mercadorias
+        (venda_id, mercadoria_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        venda_servicos
+        (venda_id, servico_id) 
+    values
+        (?, ?)
+Hibernate: 
+    select
+        e1_0.id,
+        e1_0.cnpj,
+        e2_0.id,
+        e2_0.bairro,
+        e2_0.cidade,
+        e2_0.codigo_postal,
+        e2_0.estado,
+        e2_0.informacoes_adicionais,
+        e2_0.numero,
+        e2_0.rua,
+        e1_0.nome_fantasia,
+        e1_0.razao_social 
+    from
+        empresas e1_0 
+    left join
+        enderecos e2_0 
+            on e2_0.id=e1_0.endereco_id 
+    where
+        e1_0.id=?
+Hibernate: 
+    select
+        m1_0.empresa_id,
+        m1_1.id,
+        m1_1.cadastro,
+        m1_1.descricao,
+        m1_1.fabricante,
+        m1_1.nome,
+        m1_1.quantidade,
+        m1_1.validade,
+        m1_1.valor 
+    from
+        empresa_mercadorias m1_0 
+    join
+        mercadorias m1_1 
+            on m1_1.id=m1_0.mercadoria_id 
+    where
+        m1_0.empresa_id=?
+Hibernate: 
+    select
+        s1_0.empresa_id,
+        s1_1.id,
+        s1_1.cadastro,
+        s1_1.descricao,
+        s1_1.nome,
+        s1_1.valor 
+    from
+        empresa_servicos s1_0 
+    join
+        servicos s1_1 
+            on s1_1.id=s1_0.servico_id 
+    where
+        s1_0.empresa_id=?
+Hibernate: 
+    select
+        t1_0.empresa_id,
+        t1_1.id,
+        t1_1.ddd,
+        t1_1.numero 
+    from
+        empresa_telefones t1_0 
+    join
+        telefones t1_1 
+            on t1_1.id=t1_0.telefone_id 
+    where
+        t1_0.empresa_id=?
+Hibernate: 
+    select
+        u1_0.empresa_id,
+        u1_1.id,
+        c1_0.id,
+        c1_0.nome_usuario,
+        c1_0.senha,
+        u1_1.data_cadastro,
+        u1_1.data_nascimento,
+        u1_1.email,
+        e1_0.id,
+        e1_0.bairro,
+        e1_0.cidade,
+        e1_0.codigo_postal,
+        e1_0.estado,
+        e1_0.informacoes_adicionais,
+        e1_0.numero,
+        e1_0.rua,
+        u1_1.nome,
+        u1_1.nome_social 
+    from
+        empresa_usuarios u1_0 
+    join
+        usuarios u1_1 
+            on u1_1.id=u1_0.usuario_id 
+    left join
+        credenciais c1_0 
+            on c1_0.id=u1_1.credencial_id 
+    left join
+        enderecos e1_0 
+            on e1_0.id=u1_1.endereco_id 
+    where
+        u1_0.empresa_id=?
+Hibernate: 
+    select
+        v1_0.empresa_id,
+        v1_1.id,
+        v1_1.cadastro,
+        c1_0.id,
+        c2_0.id,
+        c2_0.nome_usuario,
+        c2_0.senha,
+        c1_0.data_cadastro,
+        c1_0.data_nascimento,
+        c1_0.email,
+        e1_0.id,
+        e1_0.bairro,
+        e1_0.cidade,
+        e1_0.codigo_postal,
+        e1_0.estado,
+        e1_0.informacoes_adicionais,
+        e1_0.numero,
+        e1_0.rua,
+        c1_0.nome,
+        c1_0.nome_social,
+        f1_0.id,
+        c3_0.id,
+        c3_0.nome_usuario,
+        c3_0.senha,
+        f1_0.data_cadastro,
+        f1_0.data_nascimento,
+        f1_0.email,
+        e2_0.id,
+        e2_0.bairro,
+        e2_0.cidade,
+        e2_0.codigo_postal,
+        e2_0.estado,
+        e2_0.informacoes_adicionais,
+        e2_0.numero,
+        e2_0.rua,
+        f1_0.nome,
+        f1_0.nome_social,
+        v2_0.id,
+        v2_0.ano_fabricacao,
+        v2_0.fabricante,
+        v2_0.modelo,
+        v2_0.placa 
+    from
+        empresa_vendas v1_0 
+    join
+        vendas v1_1 
+            on v1_1.id=v1_0.venda_id 
+    left join
+        usuarios c1_0 
+            on c1_0.id=v1_1.cliente_id 
+    left join
+        credenciais c2_0 
+            on c2_0.id=c1_0.credencial_id 
+    left join
+        enderecos e1_0 
+            on e1_0.id=c1_0.endereco_id 
+    left join
+        usuarios f1_0 
+            on f1_0.id=v1_1.funcionario_id 
+    left join
+        credenciais c3_0 
+            on c3_0.id=f1_0.credencial_id 
+    left join
+        enderecos e2_0 
+            on e2_0.id=f1_0.endereco_id 
+    left join
+        veiculos v2_0 
+            on v2_0.id=v1_1.veiculo_id 
+    where
+        v1_0.empresa_id=?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.cadastro,
+        c1_0.id,
+        c2_0.id,
+        c2_0.nome_usuario,
+        c2_0.senha,
+        c1_0.data_cadastro,
+        c1_0.data_nascimento,
+        c1_0.email,
+        e1_0.id,
+        e1_0.bairro,
+        e1_0.cidade,
+        e1_0.codigo_postal,
+        e1_0.estado,
+        e1_0.informacoes_adicionais,
+        e1_0.numero,
+        e1_0.rua,
+        c1_0.nome,
+        c1_0.nome_social,
+        f1_0.id,
+        c3_0.id,
+        c3_0.nome_usuario,
+        c3_0.senha,
+        f1_0.data_cadastro,
+        f1_0.data_nascimento,
+        f1_0.email,
+        e2_0.id,
+        e2_0.bairro,
+        e2_0.cidade,
+        e2_0.codigo_postal,
+        e2_0.estado,
+        e2_0.informacoes_adicionais,
+        e2_0.numero,
+        e2_0.rua,
+        f1_0.nome,
+        f1_0.nome_social,
+        v2_0.id,
+        v2_0.ano_fabricacao,
+        v2_0.fabricante,
+        v2_0.modelo,
+        v2_0.placa 
+    from
+        vendas v1_0 
+    left join
+        usuarios c1_0 
+            on c1_0.id=v1_0.cliente_id 
+    left join
+        credenciais c2_0 
+            on c2_0.id=c1_0.credencial_id 
+    left join
+        enderecos e1_0 
+            on e1_0.id=c1_0.endereco_id 
+    left join
+        usuarios f1_0 
+            on f1_0.id=v1_0.funcionario_id 
+    left join
+        credenciais c3_0 
+            on c3_0.id=f1_0.credencial_id 
+    left join
+        enderecos e2_0 
+            on e2_0.id=f1_0.endereco_id 
+    left join
+        veiculos v2_0 
+            on v2_0.id=v1_0.veiculo_id 
+    where
+        v1_0.id=?
+Hibernate: 
+    insert 
+    into
+        empresa_vendas
+        (empresa_id, venda_id) 
+    values
+        (?, ?)
+✓ Dados iniciais carregados com sucesso!
+  - 1 Empresa
+  - 4 Usuários (Admin, Gerente, Vendedor, Cliente)
+    Credenciais de teste:
+    - Admin: admin / admin123
+    - Gerente: gerente / gerente123
+    - Vendedor: vendedor / vendedor123
+    - Cliente: cliente / cliente123
+  - 2 Veículos
+  - 2 Mercadorias
+  - 2 Serviços
+  - 1 Venda
+2026-06-09T09:27:03.305-03:00  WARN 8096 --- [automanager] [           main] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/mercadoria' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+Hibernate: 
+    select
+        m1_0.id,
+        m1_0.cadastro,
+        m1_0.descricao,
+        m1_0.fabricante,
+        m1_0.nome,
+        m1_0.quantidade,
+        m1_0.validade,
+        m1_0.valor 
+    from
+        mercadorias m1_0
+]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\enric\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+  <testcase name="testEmpresaFuncionariosEndpoint" classname="com.autobots.automanager.AutomanagerApplicationTests" time="0.053">
+    <system-out><![CDATA[Hibernate: 
+    select
+        e1_0.id,
+        e1_0.cnpj,
+        e2_0.id,
+        e2_0.bairro,
+        e2_0.cidade,
+        e2_0.codigo_postal,
+        e2_0.estado,
+        e2_0.informacoes_adicionais,
+        e2_0.numero,
+        e2_0.rua,
+        e1_0.nome_fantasia,
+        e1_0.razao_social 
+    from
+        empresas e1_0 
+    left join
+        enderecos e2_0 
+            on e2_0.id=e1_0.endereco_id 
+    where
+        e1_0.id=?
+Hibernate: 
+    select
+        u1_0.empresa_id,
+        u1_1.id,
+        c1_0.id,
+        c1_0.nome_usuario,
+        c1_0.senha,
+        u1_1.data_cadastro,
+        u1_1.data_nascimento,
+        u1_1.email,
+        e1_0.id,
+        e1_0.bairro,
+        e1_0.cidade,
+        e1_0.codigo_postal,
+        e1_0.estado,
+        e1_0.informacoes_adicionais,
+        e1_0.numero,
+        e1_0.rua,
+        u1_1.nome,
+        u1_1.nome_social 
+    from
+        empresa_usuarios u1_0 
+    join
+        usuarios u1_1 
+            on u1_1.id=u1_0.usuario_id 
+    left join
+        credenciais c1_0 
+            on c1_0.id=u1_1.credencial_id 
+    left join
+        enderecos e1_0 
+            on e1_0.id=u1_1.endereco_id 
+    where
+        u1_0.empresa_id=?
+Hibernate: 
+    select
+        p1_0.usuario_id,
+        p1_0.perfil 
+    from
+        usuario_tipos p1_0 
+    where
+        p1_0.usuario_id=?
+Hibernate: 
+    select
+        p1_0.usuario_id,
+        p1_0.perfil 
+    from
+        usuario_tipos p1_0 
+    where
+        p1_0.usuario_id=?
+Hibernate: 
+    select
+        p1_0.usuario_id,
+        p1_0.perfil 
+    from
+        usuario_tipos p1_0 
+    where
+        p1_0.usuario_id=?
+Hibernate: 
+    select
+        p1_0.usuario_id,
+        p1_0.perfil 
+    from
+        usuario_tipos p1_0 
+    where
+        p1_0.usuario_id=?
+Hibernate: 
+    select
+        t1_0.usuario_id,
+        t1_1.id,
+        t1_1.ddd,
+        t1_1.numero 
+    from
+        usuario_telefones t1_0 
+    join
+        telefones t1_1 
+            on t1_1.id=t1_0.telefone_id 
+    where
+        t1_0.usuario_id=?
+Hibernate: 
+    select
+        d1_0.usuario_id,
+        d1_1.id,
+        d1_1.numero,
+        d1_1.tipo 
+    from
+        usuario_documentos d1_0 
+    join
+        documentos d1_1 
+            on d1_1.id=d1_0.documento_id 
+    where
+        d1_0.usuario_id=?
+Hibernate: 
+    select
+        v1_0.usuario_id,
+        v1_1.id,
+        v1_1.ano_fabricacao,
+        v1_1.fabricante,
+        v1_1.modelo,
+        v1_1.placa 
+    from
+        usuario_veiculos v1_0 
+    join
+        veiculos v1_1 
+            on v1_1.id=v1_0.veiculo_id 
+    where
+        v1_0.usuario_id=?
+Hibernate: 
+    select
+        t1_0.usuario_id,
+        t1_1.id,
+        t1_1.ddd,
+        t1_1.numero 
+    from
+        usuario_telefones t1_0 
+    join
+        telefones t1_1 
+            on t1_1.id=t1_0.telefone_id 
+    where
+        t1_0.usuario_id=?
+Hibernate: 
+    select
+        d1_0.usuario_id,
+        d1_1.id,
+        d1_1.numero,
+        d1_1.tipo 
+    from
+        usuario_documentos d1_0 
+    join
+        documentos d1_1 
+            on d1_1.id=d1_0.documento_id 
+    where
+        d1_0.usuario_id=?
+Hibernate: 
+    select
+        v1_0.usuario_id,
+        v1_1.id,
+        v1_1.ano_fabricacao,
+        v1_1.fabricante,
+        v1_1.modelo,
+        v1_1.placa 
+    from
+        usuario_veiculos v1_0 
+    join
+        veiculos v1_1 
+            on v1_1.id=v1_0.veiculo_id 
+    where
+        v1_0.usuario_id=?
+Hibernate: 
+    select
+        t1_0.usuario_id,
+        t1_1.id,
+        t1_1.ddd,
+        t1_1.numero 
+    from
+        usuario_telefones t1_0 
+    join
+        telefones t1_1 
+            on t1_1.id=t1_0.telefone_id 
+    where
+        t1_0.usuario_id=?
+Hibernate: 
+    select
+        d1_0.usuario_id,
+        d1_1.id,
+        d1_1.numero,
+        d1_1.tipo 
+    from
+        usuario_documentos d1_0 
+    join
+        documentos d1_1 
+            on d1_1.id=d1_0.documento_id 
+    where
+        d1_0.usuario_id=?
+Hibernate: 
+    select
+        v1_0.usuario_id,
+        v1_1.id,
+        v1_1.ano_fabricacao,
+        v1_1.fabricante,
+        v1_1.modelo,
+        v1_1.placa 
+    from
+        usuario_veiculos v1_0 
+    join
+        veiculos v1_1 
+            on v1_1.id=v1_0.veiculo_id 
+    where
+        v1_0.usuario_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testEmpresaVendasPeriodoEndpoint" classname="com.autobots.automanager.AutomanagerApplicationTests" time="0.031">
+    <system-out><![CDATA[Hibernate: 
+    select
+        e1_0.id,
+        e1_0.cnpj,
+        e2_0.id,
+        e2_0.bairro,
+        e2_0.cidade,
+        e2_0.codigo_postal,
+        e2_0.estado,
+        e2_0.informacoes_adicionais,
+        e2_0.numero,
+        e2_0.rua,
+        e1_0.nome_fantasia,
+        e1_0.razao_social 
+    from
+        empresas e1_0 
+    left join
+        enderecos e2_0 
+            on e2_0.id=e1_0.endereco_id 
+    where
+        e1_0.id=?
+Hibernate: 
+    select
+        v1_0.empresa_id,
+        v1_1.id,
+        v1_1.cadastro,
+        c1_0.id,
+        c2_0.id,
+        c2_0.nome_usuario,
+        c2_0.senha,
+        c1_0.data_cadastro,
+        c1_0.data_nascimento,
+        c1_0.email,
+        e1_0.id,
+        e1_0.bairro,
+        e1_0.cidade,
+        e1_0.codigo_postal,
+        e1_0.estado,
+        e1_0.informacoes_adicionais,
+        e1_0.numero,
+        e1_0.rua,
+        c1_0.nome,
+        c1_0.nome_social,
+        f1_0.id,
+        c3_0.id,
+        c3_0.nome_usuario,
+        c3_0.senha,
+        f1_0.data_cadastro,
+        f1_0.data_nascimento,
+        f1_0.email,
+        e2_0.id,
+        e2_0.bairro,
+        e2_0.cidade,
+        e2_0.codigo_postal,
+        e2_0.estado,
+        e2_0.informacoes_adicionais,
+        e2_0.numero,
+        e2_0.rua,
+        f1_0.nome,
+        f1_0.nome_social,
+        v2_0.id,
+        v2_0.ano_fabricacao,
+        v2_0.fabricante,
+        v2_0.modelo,
+        v2_0.placa 
+    from
+        empresa_vendas v1_0 
+    join
+        vendas v1_1 
+            on v1_1.id=v1_0.venda_id 
+    left join
+        usuarios c1_0 
+            on c1_0.id=v1_1.cliente_id 
+    left join
+        credenciais c2_0 
+            on c2_0.id=c1_0.credencial_id 
+    left join
+        enderecos e1_0 
+            on e1_0.id=c1_0.endereco_id 
+    left join
+        usuarios f1_0 
+            on f1_0.id=v1_1.funcionario_id 
+    left join
+        credenciais c3_0 
+            on c3_0.id=f1_0.credencial_id 
+    left join
+        enderecos e2_0 
+            on e2_0.id=f1_0.endereco_id 
+    left join
+        veiculos v2_0 
+            on v2_0.id=v1_1.veiculo_id 
+    where
+        v1_0.empresa_id=?
+Hibernate: 
+    select
+        s1_0.venda_id,
+        s1_1.id,
+        s1_1.cadastro,
+        s1_1.descricao,
+        s1_1.nome,
+        s1_1.valor 
+    from
+        venda_servicos s1_0 
+    join
+        servicos s1_1 
+            on s1_1.id=s1_0.servico_id 
+    where
+        s1_0.venda_id=?
+Hibernate: 
+    select
+        m1_0.venda_id,
+        m1_1.id,
+        m1_1.cadastro,
+        m1_1.descricao,
+        m1_1.fabricante,
+        m1_1.nome,
+        m1_1.quantidade,
+        m1_1.validade,
+        m1_1.valor 
+    from
+        venda_mercadorias m1_0 
+    join
+        mercadorias m1_1 
+            on m1_1.id=m1_0.mercadoria_id 
+    where
+        m1_0.venda_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testUsuarioEndpoint" classname="com.autobots.automanager.AutomanagerApplicationTests" time="0.033">
+    <system-out><![CDATA[Hibernate: 
+    select
+        u1_0.id,
+        u1_0.credencial_id,
+        u1_0.data_cadastro,
+        u1_0.data_nascimento,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.nome_social 
+    from
+        usuarios u1_0
+Hibernate: 
+    select
+        ca1_0.id,
+        ca1_0.nome_usuario,
+        ca1_0.senha 
+    from
+        credenciais ca1_0 
+    where
+        ca1_0.id=?
+Hibernate: 
+    select
+        e1_0.id,
+        e1_0.bairro,
+        e1_0.cidade,
+        e1_0.codigo_postal,
+        e1_0.estado,
+        e1_0.informacoes_adicionais,
+        e1_0.numero,
+        e1_0.rua 
+    from
+        enderecos e1_0 
+    where
+        e1_0.id=?
+Hibernate: 
+    select
+        ca1_0.id,
+        ca1_0.nome_usuario,
+        ca1_0.senha 
+    from
+        credenciais ca1_0 
+    where
+        ca1_0.id=?
+Hibernate: 
+    select
+        e1_0.id,
+        e1_0.bairro,
+        e1_0.cidade,
+        e1_0.codigo_postal,
+        e1_0.estado,
+        e1_0.informacoes_adicionais,
+        e1_0.numero,
+        e1_0.rua 
+    from
+        enderecos e1_0 
+    where
+        e1_0.id=?
+Hibernate: 
+    select
+        ca1_0.id,
+        ca1_0.nome_usuario,
+        ca1_0.senha 
+    from
+        credenciais ca1_0 
+    where
+        ca1_0.id=?
+Hibernate: 
+    select
+        ca1_0.id,
+        ca1_0.nome_usuario,
+        ca1_0.senha 
+    from
+        credenciais ca1_0 
+    where
+        ca1_0.id=?
+Hibernate: 
+    select
+        p1_0.usuario_id,
+        p1_0.perfil 
+    from
+        usuario_tipos p1_0 
+    where
+        p1_0.usuario_id=?
+Hibernate: 
+    select
+        t1_0.usuario_id,
+        t1_1.id,
+        t1_1.ddd,
+        t1_1.numero 
+    from
+        usuario_telefones t1_0 
+    join
+        telefones t1_1 
+            on t1_1.id=t1_0.telefone_id 
+    where
+        t1_0.usuario_id=?
+Hibernate: 
+    select
+        d1_0.usuario_id,
+        d1_1.id,
+        d1_1.numero,
+        d1_1.tipo 
+    from
+        usuario_documentos d1_0 
+    join
+        documentos d1_1 
+            on d1_1.id=d1_0.documento_id 
+    where
+        d1_0.usuario_id=?
+Hibernate: 
+    select
+        v1_0.usuario_id,
+        v1_1.id,
+        v1_1.ano_fabricacao,
+        v1_1.fabricante,
+        v1_1.modelo,
+        v1_1.placa 
+    from
+        usuario_veiculos v1_0 
+    join
+        veiculos v1_1 
+            on v1_1.id=v1_0.veiculo_id 
+    where
+        v1_0.usuario_id=?
+Hibernate: 
+    select
+        p1_0.usuario_id,
+        p1_0.perfil 
+    from
+        usuario_tipos p1_0 
+    where
+        p1_0.usuario_id=?
+Hibernate: 
+    select
+        t1_0.usuario_id,
+        t1_1.id,
+        t1_1.ddd,
+        t1_1.numero 
+    from
+        usuario_telefones t1_0 
+    join
+        telefones t1_1 
+            on t1_1.id=t1_0.telefone_id 
+    where
+        t1_0.usuario_id=?
+Hibernate: 
+    select
+        d1_0.usuario_id,
+        d1_1.id,
+        d1_1.numero,
+        d1_1.tipo 
+    from
+        usuario_documentos d1_0 
+    join
+        documentos d1_1 
+            on d1_1.id=d1_0.documento_id 
+    where
+        d1_0.usuario_id=?
+Hibernate: 
+    select
+        v1_0.usuario_id,
+        v1_1.id,
+        v1_1.ano_fabricacao,
+        v1_1.fabricante,
+        v1_1.modelo,
+        v1_1.placa 
+    from
+        usuario_veiculos v1_0 
+    join
+        veiculos v1_1 
+            on v1_1.id=v1_0.veiculo_id 
+    where
+        v1_0.usuario_id=?
+Hibernate: 
+    select
+        p1_0.usuario_id,
+        p1_0.perfil 
+    from
+        usuario_tipos p1_0 
+    where
+        p1_0.usuario_id=?
+Hibernate: 
+    select
+        t1_0.usuario_id,
+        t1_1.id,
+        t1_1.ddd,
+        t1_1.numero 
+    from
+        usuario_telefones t1_0 
+    join
+        telefones t1_1 
+            on t1_1.id=t1_0.telefone_id 
+    where
+        t1_0.usuario_id=?
+Hibernate: 
+    select
+        d1_0.usuario_id,
+        d1_1.id,
+        d1_1.numero,
+        d1_1.tipo 
+    from
+        usuario_documentos d1_0 
+    join
+        documentos d1_1 
+            on d1_1.id=d1_0.documento_id 
+    where
+        d1_0.usuario_id=?
+Hibernate: 
+    select
+        v1_0.usuario_id,
+        v1_1.id,
+        v1_1.ano_fabricacao,
+        v1_1.fabricante,
+        v1_1.modelo,
+        v1_1.placa 
+    from
+        usuario_veiculos v1_0 
+    join
+        veiculos v1_1 
+            on v1_1.id=v1_0.veiculo_id 
+    where
+        v1_0.usuario_id=?
+Hibernate: 
+    select
+        p1_0.usuario_id,
+        p1_0.perfil 
+    from
+        usuario_tipos p1_0 
+    where
+        p1_0.usuario_id=?
+Hibernate: 
+    select
+        t1_0.usuario_id,
+        t1_1.id,
+        t1_1.ddd,
+        t1_1.numero 
+    from
+        usuario_telefones t1_0 
+    join
+        telefones t1_1 
+            on t1_1.id=t1_0.telefone_id 
+    where
+        t1_0.usuario_id=?
+Hibernate: 
+    select
+        d1_0.usuario_id,
+        d1_1.id,
+        d1_1.numero,
+        d1_1.tipo 
+    from
+        usuario_documentos d1_0 
+    join
+        documentos d1_1 
+            on d1_1.id=d1_0.documento_id 
+    where
+        d1_0.usuario_id=?
+Hibernate: 
+    select
+        v1_0.usuario_id,
+        v1_1.id,
+        v1_1.ano_fabricacao,
+        v1_1.fabricante,
+        v1_1.modelo,
+        v1_1.placa 
+    from
+        usuario_veiculos v1_0 
+    join
+        veiculos v1_1 
+            on v1_1.id=v1_0.veiculo_id 
+    where
+        v1_0.usuario_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testEmpresaClientesEndpoint" classname="com.autobots.automanager.AutomanagerApplicationTests" time="0.02">
+    <system-out><![CDATA[Hibernate: 
+    select
+        e1_0.id,
+        e1_0.cnpj,
+        e2_0.id,
+        e2_0.bairro,
+        e2_0.cidade,
+        e2_0.codigo_postal,
+        e2_0.estado,
+        e2_0.informacoes_adicionais,
+        e2_0.numero,
+        e2_0.rua,
+        e1_0.nome_fantasia,
+        e1_0.razao_social 
+    from
+        empresas e1_0 
+    left join
+        enderecos e2_0 
+            on e2_0.id=e1_0.endereco_id 
+    where
+        e1_0.id=?
+Hibernate: 
+    select
+        u1_0.empresa_id,
+        u1_1.id,
+        c1_0.id,
+        c1_0.nome_usuario,
+        c1_0.senha,
+        u1_1.data_cadastro,
+        u1_1.data_nascimento,
+        u1_1.email,
+        e1_0.id,
+        e1_0.bairro,
+        e1_0.cidade,
+        e1_0.codigo_postal,
+        e1_0.estado,
+        e1_0.informacoes_adicionais,
+        e1_0.numero,
+        e1_0.rua,
+        u1_1.nome,
+        u1_1.nome_social 
+    from
+        empresa_usuarios u1_0 
+    join
+        usuarios u1_1 
+            on u1_1.id=u1_0.usuario_id 
+    left join
+        credenciais c1_0 
+            on c1_0.id=u1_1.credencial_id 
+    left join
+        enderecos e1_0 
+            on e1_0.id=u1_1.endereco_id 
+    where
+        u1_0.empresa_id=?
+Hibernate: 
+    select
+        p1_0.usuario_id,
+        p1_0.perfil 
+    from
+        usuario_tipos p1_0 
+    where
+        p1_0.usuario_id=?
+Hibernate: 
+    select
+        p1_0.usuario_id,
+        p1_0.perfil 
+    from
+        usuario_tipos p1_0 
+    where
+        p1_0.usuario_id=?
+Hibernate: 
+    select
+        p1_0.usuario_id,
+        p1_0.perfil 
+    from
+        usuario_tipos p1_0 
+    where
+        p1_0.usuario_id=?
+Hibernate: 
+    select
+        p1_0.usuario_id,
+        p1_0.perfil 
+    from
+        usuario_tipos p1_0 
+    where
+        p1_0.usuario_id=?
+Hibernate: 
+    select
+        t1_0.usuario_id,
+        t1_1.id,
+        t1_1.ddd,
+        t1_1.numero 
+    from
+        usuario_telefones t1_0 
+    join
+        telefones t1_1 
+            on t1_1.id=t1_0.telefone_id 
+    where
+        t1_0.usuario_id=?
+Hibernate: 
+    select
+        d1_0.usuario_id,
+        d1_1.id,
+        d1_1.numero,
+        d1_1.tipo 
+    from
+        usuario_documentos d1_0 
+    join
+        documentos d1_1 
+            on d1_1.id=d1_0.documento_id 
+    where
+        d1_0.usuario_id=?
+Hibernate: 
+    select
+        v1_0.usuario_id,
+        v1_1.id,
+        v1_1.ano_fabricacao,
+        v1_1.fabricante,
+        v1_1.modelo,
+        v1_1.placa 
+    from
+        usuario_veiculos v1_0 
+    join
+        veiculos v1_1 
+            on v1_1.id=v1_0.veiculo_id 
+    where
+        v1_0.usuario_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testVeiculoEndpoint" classname="com.autobots.automanager.AutomanagerApplicationTests" time="0.017">
+    <system-out><![CDATA[Hibernate: 
+    select
+        v1_0.id,
+        v1_0.ano_fabricacao,
+        v1_0.fabricante,
+        v1_0.modelo,
+        v1_0.placa 
+    from
+        veiculos v1_0
+]]></system-out>
+  </testcase>
+  <testcase name="testClienteNaoPodeExcluirMercadoria" classname="com.autobots.automanager.AutomanagerApplicationTests" time="0.015"/>
+  <testcase name="testEmpresaServicosMercadoriasEndpoint" classname="com.autobots.automanager.AutomanagerApplicationTests" time="0.016">
+    <system-out><![CDATA[Hibernate: 
+    select
+        e1_0.id,
+        e1_0.cnpj,
+        e2_0.id,
+        e2_0.bairro,
+        e2_0.cidade,
+        e2_0.codigo_postal,
+        e2_0.estado,
+        e2_0.informacoes_adicionais,
+        e2_0.numero,
+        e2_0.rua,
+        e1_0.nome_fantasia,
+        e1_0.razao_social 
+    from
+        empresas e1_0 
+    left join
+        enderecos e2_0 
+            on e2_0.id=e1_0.endereco_id 
+    where
+        e1_0.id=?
+Hibernate: 
+    select
+        s1_0.empresa_id,
+        s1_1.id,
+        s1_1.cadastro,
+        s1_1.descricao,
+        s1_1.nome,
+        s1_1.valor 
+    from
+        empresa_servicos s1_0 
+    join
+        servicos s1_1 
+            on s1_1.id=s1_0.servico_id 
+    where
+        s1_0.empresa_id=?
+Hibernate: 
+    select
+        m1_0.empresa_id,
+        m1_1.id,
+        m1_1.cadastro,
+        m1_1.descricao,
+        m1_1.fabricante,
+        m1_1.nome,
+        m1_1.quantidade,
+        m1_1.validade,
+        m1_1.valor 
+    from
+        empresa_mercadorias m1_0 
+    join
+        mercadorias m1_1 
+            on m1_1.id=m1_0.mercadoria_id 
+    where
+        m1_0.empresa_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testEmpresaVeiculosAtendidosEndpoint" classname="com.autobots.automanager.AutomanagerApplicationTests" time="0.013">
+    <system-out><![CDATA[Hibernate: 
+    select
+        e1_0.id,
+        e1_0.cnpj,
+        e2_0.id,
+        e2_0.bairro,
+        e2_0.cidade,
+        e2_0.codigo_postal,
+        e2_0.estado,
+        e2_0.informacoes_adicionais,
+        e2_0.numero,
+        e2_0.rua,
+        e1_0.nome_fantasia,
+        e1_0.razao_social 
+    from
+        empresas e1_0 
+    left join
+        enderecos e2_0 
+            on e2_0.id=e1_0.endereco_id 
+    where
+        e1_0.id=?
+Hibernate: 
+    select
+        v1_0.empresa_id,
+        v1_1.id,
+        v1_1.cadastro,
+        c1_0.id,
+        c2_0.id,
+        c2_0.nome_usuario,
+        c2_0.senha,
+        c1_0.data_cadastro,
+        c1_0.data_nascimento,
+        c1_0.email,
+        e1_0.id,
+        e1_0.bairro,
+        e1_0.cidade,
+        e1_0.codigo_postal,
+        e1_0.estado,
+        e1_0.informacoes_adicionais,
+        e1_0.numero,
+        e1_0.rua,
+        c1_0.nome,
+        c1_0.nome_social,
+        f1_0.id,
+        c3_0.id,
+        c3_0.nome_usuario,
+        c3_0.senha,
+        f1_0.data_cadastro,
+        f1_0.data_nascimento,
+        f1_0.email,
+        e2_0.id,
+        e2_0.bairro,
+        e2_0.cidade,
+        e2_0.codigo_postal,
+        e2_0.estado,
+        e2_0.informacoes_adicionais,
+        e2_0.numero,
+        e2_0.rua,
+        f1_0.nome,
+        f1_0.nome_social,
+        v2_0.id,
+        v2_0.ano_fabricacao,
+        v2_0.fabricante,
+        v2_0.modelo,
+        v2_0.placa 
+    from
+        empresa_vendas v1_0 
+    join
+        vendas v1_1 
+            on v1_1.id=v1_0.venda_id 
+    left join
+        usuarios c1_0 
+            on c1_0.id=v1_1.cliente_id 
+    left join
+        credenciais c2_0 
+            on c2_0.id=c1_0.credencial_id 
+    left join
+        enderecos e1_0 
+            on e1_0.id=c1_0.endereco_id 
+    left join
+        usuarios f1_0 
+            on f1_0.id=v1_1.funcionario_id 
+    left join
+        credenciais c3_0 
+            on c3_0.id=f1_0.credencial_id 
+    left join
+        enderecos e2_0 
+            on e2_0.id=f1_0.endereco_id 
+    left join
+        veiculos v2_0 
+            on v2_0.id=v1_1.veiculo_id 
+    where
+        v1_0.empresa_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testVendaEndpoint" classname="com.autobots.automanager.AutomanagerApplicationTests" time="0.029">
+    <system-out><![CDATA[Hibernate: 
+    select
+        v1_0.id,
+        v1_0.cadastro,
+        v1_0.cliente_id,
+        v1_0.funcionario_id,
+        v1_0.veiculo_id 
+    from
+        vendas v1_0
+Hibernate: 
+    select
+        u1_0.id,
+        c1_0.id,
+        c1_0.nome_usuario,
+        c1_0.senha,
+        u1_0.data_cadastro,
+        u1_0.data_nascimento,
+        u1_0.email,
+        e1_0.id,
+        e1_0.bairro,
+        e1_0.cidade,
+        e1_0.codigo_postal,
+        e1_0.estado,
+        e1_0.informacoes_adicionais,
+        e1_0.numero,
+        e1_0.rua,
+        u1_0.nome,
+        u1_0.nome_social 
+    from
+        usuarios u1_0 
+    left join
+        credenciais c1_0 
+            on c1_0.id=u1_0.credencial_id 
+    left join
+        enderecos e1_0 
+            on e1_0.id=u1_0.endereco_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        c1_0.id,
+        c1_0.nome_usuario,
+        c1_0.senha,
+        u1_0.data_cadastro,
+        u1_0.data_nascimento,
+        u1_0.email,
+        e1_0.id,
+        e1_0.bairro,
+        e1_0.cidade,
+        e1_0.codigo_postal,
+        e1_0.estado,
+        e1_0.informacoes_adicionais,
+        e1_0.numero,
+        e1_0.rua,
+        u1_0.nome,
+        u1_0.nome_social 
+    from
+        usuarios u1_0 
+    left join
+        credenciais c1_0 
+            on c1_0.id=u1_0.credencial_id 
+    left join
+        enderecos e1_0 
+            on e1_0.id=u1_0.endereco_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.ano_fabricacao,
+        v1_0.fabricante,
+        v1_0.modelo,
+        v1_0.placa 
+    from
+        veiculos v1_0 
+    where
+        v1_0.id=?
+Hibernate: 
+    select
+        p1_0.usuario_id,
+        p1_0.perfil 
+    from
+        usuario_tipos p1_0 
+    where
+        p1_0.usuario_id=?
+Hibernate: 
+    select
+        t1_0.usuario_id,
+        t1_1.id,
+        t1_1.ddd,
+        t1_1.numero 
+    from
+        usuario_telefones t1_0 
+    join
+        telefones t1_1 
+            on t1_1.id=t1_0.telefone_id 
+    where
+        t1_0.usuario_id=?
+Hibernate: 
+    select
+        d1_0.usuario_id,
+        d1_1.id,
+        d1_1.numero,
+        d1_1.tipo 
+    from
+        usuario_documentos d1_0 
+    join
+        documentos d1_1 
+            on d1_1.id=d1_0.documento_id 
+    where
+        d1_0.usuario_id=?
+Hibernate: 
+    select
+        v1_0.usuario_id,
+        v1_1.id,
+        v1_1.ano_fabricacao,
+        v1_1.fabricante,
+        v1_1.modelo,
+        v1_1.placa 
+    from
+        usuario_veiculos v1_0 
+    join
+        veiculos v1_1 
+            on v1_1.id=v1_0.veiculo_id 
+    where
+        v1_0.usuario_id=?
+Hibernate: 
+    select
+        p1_0.usuario_id,
+        p1_0.perfil 
+    from
+        usuario_tipos p1_0 
+    where
+        p1_0.usuario_id=?
+Hibernate: 
+    select
+        t1_0.usuario_id,
+        t1_1.id,
+        t1_1.ddd,
+        t1_1.numero 
+    from
+        usuario_telefones t1_0 
+    join
+        telefones t1_1 
+            on t1_1.id=t1_0.telefone_id 
+    where
+        t1_0.usuario_id=?
+Hibernate: 
+    select
+        d1_0.usuario_id,
+        d1_1.id,
+        d1_1.numero,
+        d1_1.tipo 
+    from
+        usuario_documentos d1_0 
+    join
+        documentos d1_1 
+            on d1_1.id=d1_0.documento_id 
+    where
+        d1_0.usuario_id=?
+Hibernate: 
+    select
+        v1_0.usuario_id,
+        v1_1.id,
+        v1_1.ano_fabricacao,
+        v1_1.fabricante,
+        v1_1.modelo,
+        v1_1.placa 
+    from
+        usuario_veiculos v1_0 
+    join
+        veiculos v1_1 
+            on v1_1.id=v1_0.veiculo_id 
+    where
+        v1_0.usuario_id=?
+Hibernate: 
+    select
+        m1_0.venda_id,
+        m1_1.id,
+        m1_1.cadastro,
+        m1_1.descricao,
+        m1_1.fabricante,
+        m1_1.nome,
+        m1_1.quantidade,
+        m1_1.validade,
+        m1_1.valor 
+    from
+        venda_mercadorias m1_0 
+    join
+        mercadorias m1_1 
+            on m1_1.id=m1_0.mercadoria_id 
+    where
+        m1_0.venda_id=?
+Hibernate: 
+    select
+        s1_0.venda_id,
+        s1_1.id,
+        s1_1.cadastro,
+        s1_1.descricao,
+        s1_1.nome,
+        s1_1.valor 
+    from
+        venda_servicos s1_0 
+    join
+        servicos s1_1 
+            on s1_1.id=s1_0.servico_id 
+    where
+        s1_0.venda_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testEmpresaEndpoint" classname="com.autobots.automanager.AutomanagerApplicationTests" time="0.033">
+    <system-out><![CDATA[Hibernate: 
+    select
+        e1_0.id,
+        e1_0.cnpj,
+        e1_0.endereco_id,
+        e1_0.nome_fantasia,
+        e1_0.razao_social 
+    from
+        empresas e1_0
+Hibernate: 
+    select
+        e1_0.id,
+        e1_0.bairro,
+        e1_0.cidade,
+        e1_0.codigo_postal,
+        e1_0.estado,
+        e1_0.informacoes_adicionais,
+        e1_0.numero,
+        e1_0.rua 
+    from
+        enderecos e1_0 
+    where
+        e1_0.id=?
+Hibernate: 
+    select
+        t1_0.empresa_id,
+        t1_1.id,
+        t1_1.ddd,
+        t1_1.numero 
+    from
+        empresa_telefones t1_0 
+    join
+        telefones t1_1 
+            on t1_1.id=t1_0.telefone_id 
+    where
+        t1_0.empresa_id=?
+Hibernate: 
+    select
+        u1_0.empresa_id,
+        u1_1.id,
+        c1_0.id,
+        c1_0.nome_usuario,
+        c1_0.senha,
+        u1_1.data_cadastro,
+        u1_1.data_nascimento,
+        u1_1.email,
+        e1_0.id,
+        e1_0.bairro,
+        e1_0.cidade,
+        e1_0.codigo_postal,
+        e1_0.estado,
+        e1_0.informacoes_adicionais,
+        e1_0.numero,
+        e1_0.rua,
+        u1_1.nome,
+        u1_1.nome_social 
+    from
+        empresa_usuarios u1_0 
+    join
+        usuarios u1_1 
+            on u1_1.id=u1_0.usuario_id 
+    left join
+        credenciais c1_0 
+            on c1_0.id=u1_1.credencial_id 
+    left join
+        enderecos e1_0 
+            on e1_0.id=u1_1.endereco_id 
+    where
+        u1_0.empresa_id=?
+Hibernate: 
+    select
+        p1_0.usuario_id,
+        p1_0.perfil 
+    from
+        usuario_tipos p1_0 
+    where
+        p1_0.usuario_id=?
+Hibernate: 
+    select
+        t1_0.usuario_id,
+        t1_1.id,
+        t1_1.ddd,
+        t1_1.numero 
+    from
+        usuario_telefones t1_0 
+    join
+        telefones t1_1 
+            on t1_1.id=t1_0.telefone_id 
+    where
+        t1_0.usuario_id=?
+Hibernate: 
+    select
+        d1_0.usuario_id,
+        d1_1.id,
+        d1_1.numero,
+        d1_1.tipo 
+    from
+        usuario_documentos d1_0 
+    join
+        documentos d1_1 
+            on d1_1.id=d1_0.documento_id 
+    where
+        d1_0.usuario_id=?
+Hibernate: 
+    select
+        v1_0.usuario_id,
+        v1_1.id,
+        v1_1.ano_fabricacao,
+        v1_1.fabricante,
+        v1_1.modelo,
+        v1_1.placa 
+    from
+        usuario_veiculos v1_0 
+    join
+        veiculos v1_1 
+            on v1_1.id=v1_0.veiculo_id 
+    where
+        v1_0.usuario_id=?
+Hibernate: 
+    select
+        p1_0.usuario_id,
+        p1_0.perfil 
+    from
+        usuario_tipos p1_0 
+    where
+        p1_0.usuario_id=?
+Hibernate: 
+    select
+        t1_0.usuario_id,
+        t1_1.id,
+        t1_1.ddd,
+        t1_1.numero 
+    from
+        usuario_telefones t1_0 
+    join
+        telefones t1_1 
+            on t1_1.id=t1_0.telefone_id 
+    where
+        t1_0.usuario_id=?
+Hibernate: 
+    select
+        d1_0.usuario_id,
+        d1_1.id,
+        d1_1.numero,
+        d1_1.tipo 
+    from
+        usuario_documentos d1_0 
+    join
+        documentos d1_1 
+            on d1_1.id=d1_0.documento_id 
+    where
+        d1_0.usuario_id=?
+Hibernate: 
+    select
+        v1_0.usuario_id,
+        v1_1.id,
+        v1_1.ano_fabricacao,
+        v1_1.fabricante,
+        v1_1.modelo,
+        v1_1.placa 
+    from
+        usuario_veiculos v1_0 
+    join
+        veiculos v1_1 
+            on v1_1.id=v1_0.veiculo_id 
+    where
+        v1_0.usuario_id=?
+Hibernate: 
+    select
+        p1_0.usuario_id,
+        p1_0.perfil 
+    from
+        usuario_tipos p1_0 
+    where
+        p1_0.usuario_id=?
+Hibernate: 
+    select
+        t1_0.usuario_id,
+        t1_1.id,
+        t1_1.ddd,
+        t1_1.numero 
+    from
+        usuario_telefones t1_0 
+    join
+        telefones t1_1 
+            on t1_1.id=t1_0.telefone_id 
+    where
+        t1_0.usuario_id=?
+Hibernate: 
+    select
+        d1_0.usuario_id,
+        d1_1.id,
+        d1_1.numero,
+        d1_1.tipo 
+    from
+        usuario_documentos d1_0 
+    join
+        documentos d1_1 
+            on d1_1.id=d1_0.documento_id 
+    where
+        d1_0.usuario_id=?
+Hibernate: 
+    select
+        v1_0.usuario_id,
+        v1_1.id,
+        v1_1.ano_fabricacao,
+        v1_1.fabricante,
+        v1_1.modelo,
+        v1_1.placa 
+    from
+        usuario_veiculos v1_0 
+    join
+        veiculos v1_1 
+            on v1_1.id=v1_0.veiculo_id 
+    where
+        v1_0.usuario_id=?
+Hibernate: 
+    select
+        p1_0.usuario_id,
+        p1_0.perfil 
+    from
+        usuario_tipos p1_0 
+    where
+        p1_0.usuario_id=?
+Hibernate: 
+    select
+        t1_0.usuario_id,
+        t1_1.id,
+        t1_1.ddd,
+        t1_1.numero 
+    from
+        usuario_telefones t1_0 
+    join
+        telefones t1_1 
+            on t1_1.id=t1_0.telefone_id 
+    where
+        t1_0.usuario_id=?
+Hibernate: 
+    select
+        d1_0.usuario_id,
+        d1_1.id,
+        d1_1.numero,
+        d1_1.tipo 
+    from
+        usuario_documentos d1_0 
+    join
+        documentos d1_1 
+            on d1_1.id=d1_0.documento_id 
+    where
+        d1_0.usuario_id=?
+Hibernate: 
+    select
+        v1_0.usuario_id,
+        v1_1.id,
+        v1_1.ano_fabricacao,
+        v1_1.fabricante,
+        v1_1.modelo,
+        v1_1.placa 
+    from
+        usuario_veiculos v1_0 
+    join
+        veiculos v1_1 
+            on v1_1.id=v1_0.veiculo_id 
+    where
+        v1_0.usuario_id=?
+Hibernate: 
+    select
+        m1_0.empresa_id,
+        m1_1.id,
+        m1_1.cadastro,
+        m1_1.descricao,
+        m1_1.fabricante,
+        m1_1.nome,
+        m1_1.quantidade,
+        m1_1.validade,
+        m1_1.valor 
+    from
+        empresa_mercadorias m1_0 
+    join
+        mercadorias m1_1 
+            on m1_1.id=m1_0.mercadoria_id 
+    where
+        m1_0.empresa_id=?
+Hibernate: 
+    select
+        s1_0.empresa_id,
+        s1_1.id,
+        s1_1.cadastro,
+        s1_1.descricao,
+        s1_1.nome,
+        s1_1.valor 
+    from
+        empresa_servicos s1_0 
+    join
+        servicos s1_1 
+            on s1_1.id=s1_0.servico_id 
+    where
+        s1_0.empresa_id=?
+Hibernate: 
+    select
+        v1_0.empresa_id,
+        v1_1.id,
+        v1_1.cadastro,
+        c1_0.id,
+        c2_0.id,
+        c2_0.nome_usuario,
+        c2_0.senha,
+        c1_0.data_cadastro,
+        c1_0.data_nascimento,
+        c1_0.email,
+        e1_0.id,
+        e1_0.bairro,
+        e1_0.cidade,
+        e1_0.codigo_postal,
+        e1_0.estado,
+        e1_0.informacoes_adicionais,
+        e1_0.numero,
+        e1_0.rua,
+        c1_0.nome,
+        c1_0.nome_social,
+        f1_0.id,
+        c3_0.id,
+        c3_0.nome_usuario,
+        c3_0.senha,
+        f1_0.data_cadastro,
+        f1_0.data_nascimento,
+        f1_0.email,
+        e2_0.id,
+        e2_0.bairro,
+        e2_0.cidade,
+        e2_0.codigo_postal,
+        e2_0.estado,
+        e2_0.informacoes_adicionais,
+        e2_0.numero,
+        e2_0.rua,
+        f1_0.nome,
+        f1_0.nome_social,
+        v2_0.id,
+        v2_0.ano_fabricacao,
+        v2_0.fabricante,
+        v2_0.modelo,
+        v2_0.placa 
+    from
+        empresa_vendas v1_0 
+    join
+        vendas v1_1 
+            on v1_1.id=v1_0.venda_id 
+    left join
+        usuarios c1_0 
+            on c1_0.id=v1_1.cliente_id 
+    left join
+        credenciais c2_0 
+            on c2_0.id=c1_0.credencial_id 
+    left join
+        enderecos e1_0 
+            on e1_0.id=c1_0.endereco_id 
+    left join
+        usuarios f1_0 
+            on f1_0.id=v1_1.funcionario_id 
+    left join
+        credenciais c3_0 
+            on c3_0.id=f1_0.credencial_id 
+    left join
+        enderecos e2_0 
+            on e2_0.id=f1_0.endereco_id 
+    left join
+        veiculos v2_0 
+            on v2_0.id=v1_1.veiculo_id 
+    where
+        v1_0.empresa_id=?
+Hibernate: 
+    select
+        m1_0.venda_id,
+        m1_1.id,
+        m1_1.cadastro,
+        m1_1.descricao,
+        m1_1.fabricante,
+        m1_1.nome,
+        m1_1.quantidade,
+        m1_1.validade,
+        m1_1.valor 
+    from
+        venda_mercadorias m1_0 
+    join
+        mercadorias m1_1 
+            on m1_1.id=m1_0.mercadoria_id 
+    where
+        m1_0.venda_id=?
+Hibernate: 
+    select
+        s1_0.venda_id,
+        s1_1.id,
+        s1_1.cadastro,
+        s1_1.descricao,
+        s1_1.nome,
+        s1_1.valor 
+    from
+        venda_servicos s1_0 
+    join
+        servicos s1_1 
+            on s1_1.id=s1_0.servico_id 
+    where
+        s1_0.venda_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testServicoEndpoint" classname="com.autobots.automanager.AutomanagerApplicationTests" time="0.014">
+    <system-out><![CDATA[Hibernate: 
+    select
+        s1_0.id,
+        s1_0.cadastro,
+        s1_0.descricao,
+        s1_0.nome,
+        s1_0.valor 
+    from
+        servicos s1_0
+]]></system-out>
+  </testcase>
+</testsuite>

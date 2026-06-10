@@ -1,0 +1,6 @@
+com\autobots\msvendas\seguranca\JwtProvider.class
+com\autobots\msvendas\servico\VendasPeriodoService.class
+com\autobots\msvendas\MsVendasApplication.class
+com\autobots\msvendas\seguranca\JwtAuthenticationFilter.class
+com\autobots\msvendas\controle\VendasPeriodoControle.class
+com\autobots\msvendas\seguranca\SecurityConfig.class

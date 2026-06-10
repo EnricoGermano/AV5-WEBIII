@@ -1,0 +1,6 @@
+com\autobots\msfuncionarios\seguranca\SecurityConfig.class
+com\autobots\msfuncionarios\seguranca\JwtAuthenticationFilter.class
+com\autobots\msfuncionarios\controle\FuncionariosControle.class
+com\autobots\msfuncionarios\MsFuncionariosApplication.class
+com\autobots\msfuncionarios\servico\FuncionariosService.class
+com\autobots\msfuncionarios\seguranca\JwtProvider.class

@@ -1,0 +1,6 @@
+com\autobots\msclientes\seguranca\JwtProvider.class
+com\autobots\msclientes\controle\ClientesControle.class
+com\autobots\msclientes\seguranca\SecurityConfig.class
+com\autobots\msclientes\servico\ClientesService.class
+com\autobots\msclientes\MsClientesApplication.class
+com\autobots\msclientes\seguranca\JwtAuthenticationFilter.class

@@ -1,0 +1,6 @@
+com\autobots\msveiculos\seguranca\JwtAuthenticationFilter.class
+com\autobots\msveiculos\seguranca\SecurityConfig.class
+com\autobots\msveiculos\controle\VeiculosAtendidosControle.class
+com\autobots\msveiculos\MsVeiculosApplication.class
+com\autobots\msveiculos\servico\VeiculosAtendidosService.class
+com\autobots\msveiculos\seguranca\JwtProvider.class

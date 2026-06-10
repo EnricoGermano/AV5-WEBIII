@@ -1,0 +1,6 @@
+com\autobots\mscatalogo\seguranca\JwtProvider.class
+com\autobots\mscatalogo\MsCatalogoApplication.class
+com\autobots\mscatalogo\seguranca\SecurityConfig.class
+com\autobots\mscatalogo\seguranca\JwtAuthenticationFilter.class
+com\autobots\mscatalogo\controle\CatalogoControle.class
+com\autobots\mscatalogo\servico\CatalogoService.class
