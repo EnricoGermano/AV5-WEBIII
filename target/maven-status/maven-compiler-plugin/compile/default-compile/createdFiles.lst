@@ -33,7 +33,6 @@ com\autobots\automanager\entidades\Telefone.class
 com\autobots\automanager\repositorios\DocumentoRepositorio.class
 com\autobots\automanager\controles\AutenticacaoControle.class
 com\autobots\automanager\modelo\AdicionadorLink.class
-com\autobots\automanager\controles\EmpresaControle.class
 com\autobots\automanager\controles\UsuarioControle.class
 com\autobots\automanager\entidades\Usuario.class
 com\autobots\automanager\controles\EnderecoControle.class

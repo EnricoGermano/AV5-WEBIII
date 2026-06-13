@@ -32,7 +32,6 @@ public class EmpresaService {
     }
 
     public EmpresaDTO cadastrar(Empresa empresa) {
-        // Logica para nao sobreescrever ID pode ser validada no controller ou aqui
         empresa.setId(null);
         return EmpresaDTO.fromEntity(empresaRepositorio.save(empresa));
     }
@@ -53,7 +52,6 @@ public class EmpresaService {
         return true;
     }
 
-    // OTIMIZACAO PARA EVITAR OVER-FETCHING NO MICROSSERVICO!
     public List<UsuarioDTO> obterClientesDaEmpresa(Long empresaId) {
         Optional<Empresa> optEmpresa = empresaRepositorio.findById(empresaId);
         if (optEmpresa.isEmpty()) return List.of();

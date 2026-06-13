@@ -31,10 +31,11 @@ POST   /auth/login                 - Realizar login
 POST   /auth/refresh               - Renovar token
 ```
     Credenciais de teste:
-    - Admin: admin / admin123
-    - Gerente: gerente / gerente123
-    - Vendedor: vendedor / vendedor123
-    - Cliente: cliente / cliente123
+                nomeUsuario / senha
+    - Admin:    admin       / admin123
+    - Gerente:  gerente     / gerente123
+    - Vendedor: vendedor    / vendedor123
+    - Cliente:  cliente     / cliente123
 
 ### Empresa
 ```

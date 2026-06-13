@@ -123,7 +123,6 @@ public class EmpresaControle {
         return ResponseEntity.ok(salva);
     }
 
-    // NOVA ROTA OTIMIZADA: Resolve o problema de OVER-FETCHING do MS-Clientes
     @GetMapping("/{empresaId}/clientes")
     public ResponseEntity<List<Usuario>> obterClientesDaEmpresa(@PathVariable Long empresaId) {
         Optional<Empresa> optEmpresa = repositorio.findById(empresaId);
@@ -136,7 +135,6 @@ public class EmpresaControle {
         return ResponseEntity.ok(clientes);
     }
 
-    // NOVA ROTA OTIMIZADA: MS-Funcionarios
     @GetMapping("/{empresaId}/funcionarios")
     public ResponseEntity<List<Usuario>> obterFuncionariosDaEmpresa(@PathVariable Long empresaId) {
         Optional<Empresa> optEmpresa = repositorio.findById(empresaId);
@@ -144,14 +142,13 @@ public class EmpresaControle {
             return ResponseEntity.notFound().build();
         }
         List<Usuario> funcionarios = optEmpresa.get().getUsuarios().stream()
-                .filter(u -> u.getPerfil().contains(com.autobots.automanager.enumeracoes.TipoUsuario.FUNCIONARIO) || 
+                .filter(u -> u.getPerfil().contains(com.autobots.automanager.enumeracoes.TipoUsuario.ADMINISTRADOR) || 
                              u.getPerfil().contains(com.autobots.automanager.enumeracoes.TipoUsuario.GERENTE) || 
                              u.getPerfil().contains(com.autobots.automanager.enumeracoes.TipoUsuario.VENDEDOR))
                 .toList();
         return ResponseEntity.ok(funcionarios);
     }
 
-    // NOVA ROTA OTIMIZADA: MS-Catalogo
     @GetMapping("/{empresaId}/catalogo")
     public ResponseEntity<java.util.Map<String, Object>> obterCatalogoDaEmpresa(@PathVariable Long empresaId) {
         Optional<Empresa> optEmpresa = repositorio.findById(empresaId);
@@ -164,7 +161,6 @@ public class EmpresaControle {
         return ResponseEntity.ok(catalogo);
     }
 
-    // NOVA ROTA OTIMIZADA: MS-Vendas (Vendas por periodo)
     @GetMapping("/{empresaId}/vendas-periodo")
     public ResponseEntity<List<com.autobots.automanager.entidades.Venda>> obterVendasPorPeriodo(
             @PathVariable Long empresaId, 
@@ -181,7 +177,6 @@ public class EmpresaControle {
         return ResponseEntity.ok(vendasPeriodo);
     }
 
-    // NOVA ROTA OTIMIZADA: MS-Veiculos (Veículos atendidos)
     @GetMapping("/{empresaId}/veiculos-atendidos")
     public ResponseEntity<java.util.Set<com.autobots.automanager.entidades.Veiculo>> obterVeiculosAtendidos(@PathVariable Long empresaId) {
         Optional<Empresa> optEmpresa = repositorio.findById(empresaId);

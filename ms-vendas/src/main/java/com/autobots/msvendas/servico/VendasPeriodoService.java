@@ -47,14 +47,12 @@ public class VendasPeriodoService {
             vendasFiltradas = new ArrayList<>();
         }
 
-        // Coletar servicos e mercadorias únicos
         List<Map<String, Object>> servicosUnicos = new ArrayList<>();
         List<Map<String, Object>> mercadoriasUnicas = new ArrayList<>();
         Set<String> servicosIds = new HashSet<>();
         Set<String> mercadoriasIds = new HashSet<>();
 
         for (Map<String, Object> venda : vendasFiltradas) {
-            // Coletar servicos
             if (venda.containsKey("servicos")) {
                 List<Map<String, Object>> servicos = (List<Map<String, Object>>) venda.get("servicos");
                 if (servicos != null) {
@@ -67,7 +65,6 @@ public class VendasPeriodoService {
                 }
             }
 
-            // Coletar mercadorias
             if (venda.containsKey("mercadorias")) {
                 List<Map<String, Object>> mercadorias = (List<Map<String, Object>>) venda.get("mercadorias");
                 if (mercadorias != null) {
@@ -81,7 +78,6 @@ public class VendasPeriodoService {
             }
         }
 
-        // Montar resposta
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Map<String, Object> resultado = new LinkedHashMap<>();
         resultado.put("inicio", sdf.format(inicio));
@@ -98,20 +94,17 @@ public class VendasPeriodoService {
         }
 
         try {
-            // Se o cadastro vier como um número (timestamp em milissegundos)
             if (cadastroObj instanceof Number) {
                 long timestamp = ((Number) cadastroObj).longValue();
                 return new Date(timestamp);
             }
 
-            // Se o cadastro vier como String numérica
             if (cadastroObj instanceof String) {
                 String cadastroStr = (String) cadastroObj;
                 try {
                     long timestamp = Long.parseLong(cadastroStr);
                     return new Date(timestamp);
                 } catch (NumberFormatException e) {
-                    // Tentar como data ISO
                     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
                     return sdf.parse(cadastroStr);
                 }
