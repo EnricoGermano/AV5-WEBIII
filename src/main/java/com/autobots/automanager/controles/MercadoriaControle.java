@@ -51,7 +51,7 @@ public class MercadoriaControle {
         return ResponseEntity.ok(mercadoria);
     }
 
-    @PostMapping("/cadastro")
+    @PostMapping
     @PreAuthorize("@autorizacaoService.isInterno(authentication)")
     public ResponseEntity<Mercadoria> cadastrarMercadoria(@RequestBody Mercadoria mercadoria) {
         if (mercadoria.getId() != null) {
@@ -62,7 +62,7 @@ public class MercadoriaControle {
         return ResponseEntity.status(HttpStatus.CREATED).body(salva);
     }
 
-    @PutMapping("/atualizar/{id}")
+    @PutMapping("/{id}")
     @PreAuthorize("@autorizacaoService.isInterno(authentication)")
     public ResponseEntity<Mercadoria> atualizarMercadoria(@PathVariable Long id, @RequestBody Mercadoria mercadoria) {
         Optional<Mercadoria> opt = repositorio.findById(id);
@@ -81,7 +81,7 @@ public class MercadoriaControle {
         return ResponseEntity.ok(atualizada);
     }
 
-    @DeleteMapping("/excluir/{id}")
+    @DeleteMapping("/{id}")
     @PreAuthorize("@autorizacaoService.isInterno(authentication)")
     public ResponseEntity<Void> excluirMercadoria(@PathVariable Long id) {
         if (!repositorio.existsById(id)) {

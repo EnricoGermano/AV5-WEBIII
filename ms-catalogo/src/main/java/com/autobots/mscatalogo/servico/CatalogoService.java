@@ -27,7 +27,7 @@ public class CatalogoService {
 
     @SuppressWarnings("unchecked")
     public Map<String, Object> obterCatalogoPorEmpresa(Long empresaId, String authorizationHeader) {
-        String url = automanagerApiUrl + "/empresa/" + empresaId;
+        String url = automanagerApiUrl + "/empresa/" + empresaId + "/catalogo";
 
         HttpHeaders headers = new HttpHeaders();
         headers.set("Authorization", authorizationHeader);
@@ -40,16 +40,10 @@ public class CatalogoService {
                 Map.class
         );
 
-        Map<String, Object> empresaData = response.getBody();
+        Map<String, Object> catalogo = response.getBody();
 
-        Map<String, Object> catalogo = new HashMap<>();
-
-        if (empresaData != null) {
-            Object servicos = empresaData.get("servicos");
-            Object mercadorias = empresaData.get("mercadorias");
-            catalogo.put("servicos", servicos != null ? servicos : new ArrayList<>());
-            catalogo.put("mercadorias", mercadorias != null ? mercadorias : new ArrayList<>());
-        } else {
+        if (catalogo == null) {
+            catalogo = new HashMap<>();
             catalogo.put("servicos", new ArrayList<>());
             catalogo.put("mercadorias", new ArrayList<>());
         }

@@ -51,7 +51,7 @@ public class VeiculoControle {
         return ResponseEntity.ok(veiculo);
     }
 
-    @PostMapping("/cadastro")
+    @PostMapping
     @PreAuthorize("@autorizacaoService.isInterno(authentication)")
     public ResponseEntity<Veiculo> cadastrarVeiculo(@RequestBody Veiculo veiculo) {
         if (veiculo.getId() != null) {
@@ -62,7 +62,7 @@ public class VeiculoControle {
         return ResponseEntity.status(HttpStatus.CREATED).body(salvo);
     }
 
-    @PutMapping("/atualizar/{id}")
+    @PutMapping("/{id}")
     @PreAuthorize("@autorizacaoService.isInterno(authentication)")
     public ResponseEntity<Veiculo> atualizarVeiculo(@PathVariable Long id, @RequestBody Veiculo veiculo) {
         Optional<Veiculo> opt = repositorio.findById(id);
@@ -79,7 +79,7 @@ public class VeiculoControle {
         return ResponseEntity.ok(atualizado);
     }
 
-    @DeleteMapping("/excluir/{id}")
+    @DeleteMapping("/{id}")
     @PreAuthorize("@autorizacaoService.isInterno(authentication)")
     public ResponseEntity<Void> excluirVeiculo(@PathVariable Long id) {
         if (!repositorio.existsById(id)) {

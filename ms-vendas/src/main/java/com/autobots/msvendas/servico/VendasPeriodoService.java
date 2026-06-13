@@ -31,32 +31,20 @@ public class VendasPeriodoService {
 
     @SuppressWarnings("unchecked")
     public Map<String, Object> buscarVendasPorPeriodo(Long empresaId, Date inicio, Date fim, String authorizationHeader) {
-        // Ajustar fim para incluir o dia inteiro (23:59:59.999)
-        Date fimAjustado = new Date(fim.getTime() + (24 * 60 * 60 * 1000L) - 1);
-
-        // Configurar headers com o token JWT
         HttpHeaders headers = new HttpHeaders();
         headers.set("Authorization", authorizationHeader);
         HttpEntity<String> entity = new HttpEntity<>(headers);
 
-        // Chamar a API principal do automanager
-        String url = apiUrl + "/empresa/" + empresaId;
-        ResponseEntity<Map> response = restTemplate.exchange(url, HttpMethod.GET, entity, Map.class);
+        SimpleDateFormat sdfUrl = new SimpleDateFormat("yyyy-MM-dd");
+        String inicioStr = sdfUrl.format(inicio);
+        String fimStr = sdfUrl.format(fim);
 
-        Map<String, Object> empresa = response.getBody();
+        String url = apiUrl + "/empresa/" + empresaId + "/vendas-periodo?inicio=" + inicioStr + "&fim=" + fimStr;
+        ResponseEntity<List> response = restTemplate.exchange(url, HttpMethod.GET, entity, List.class);
 
-        List<Map<String, Object>> vendasFiltradas = new ArrayList<>();
-
-        if (empresa != null && empresa.containsKey("vendas")) {
-            List<Map<String, Object>> vendas = (List<Map<String, Object>>) empresa.get("vendas");
-
-            for (Map<String, Object> venda : vendas) {
-                Date cadastroDate = extrairDataCadastro(venda.get("cadastro"));
-
-                if (cadastroDate != null && !cadastroDate.before(inicio) && !cadastroDate.after(fimAjustado)) {
-                    vendasFiltradas.add(venda);
-                }
-            }
+        List<Map<String, Object>> vendasFiltradas = response.getBody();
+        if (vendasFiltradas == null) {
+            vendasFiltradas = new ArrayList<>();
         }
 
         // Coletar servicos e mercadorias únicos

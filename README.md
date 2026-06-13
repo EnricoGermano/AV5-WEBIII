@@ -40,20 +40,25 @@ POST   /auth/refresh               - Renovar token
 ```
 GET    /empresa                        - Listar todas as empresas
 GET    /empresa/{id}                   - Obter empresa por ID
-POST   /empresa/cadastro               - Cadastrar nova empresa
-PUT    /empresa/atualizar/{id}         - Atualizar empresa
-DELETE /empresa/excluir/{id}           - Excluir empresa
+POST   /empresa                        - Cadastrar nova empresa
+PUT    /empresa/{id}                   - Atualizar empresa
+DELETE /empresa/{id}                   - Excluir empresa
 POST   /empresa/{empresaId}/usuario/{usuarioId}      - Vincular usuário à empresa
 DELETE /empresa/{empresaId}/usuario/{usuarioId}      - Desvincular usuário da empresa
+GET    /empresa/{empresaId}/clientes                 - Listar apenas clientes (Usado pelo MS Clientes)
+GET    /empresa/{empresaId}/funcionarios             - Listar apenas funcionários (Usado pelo MS Funcionarios)
+GET    /empresa/{empresaId}/catalogo                 - Listar serviços e mercadorias (Usado pelo MS Catalogo)
+GET    /empresa/{empresaId}/vendas-periodo           - Listar vendas por período (Usado pelo MS Vendas)
+GET    /empresa/{empresaId}/veiculos-atendidos       - Listar veículos atendidos (Usado pelo MS Veiculos)
 ```
 
 ### Usuario
 ```
 GET    /usuario                        - Listar todos os usuários
 GET    /usuario/{id}                   - Obter usuário por ID
-POST   /usuario/cadastro               - Cadastrar novo usuário
-PUT    /usuario/atualizar/{id}         - Atualizar usuário
-DELETE /usuario/excluir/{id}           - Excluir usuário
+POST   /usuario                        - Cadastrar novo usuário
+PUT    /usuario/{id}                   - Atualizar usuário
+DELETE /usuario/{id}                   - Excluir usuário
 POST   /usuario/{usuarioId}/veiculo/{veiculoId}     - Vincular veículo ao usuário
 DELETE /usuario/{usuarioId}/veiculo/{veiculoId}     - Desvincular veículo do usuário
 ```
@@ -62,36 +67,36 @@ DELETE /usuario/{usuarioId}/veiculo/{veiculoId}     - Desvincular veículo do us
 ```
 GET    /veiculo                        - Listar todos os veículos
 GET    /veiculo/{id}                   - Obter veículo por ID
-POST   /veiculo/cadastro               - Cadastrar novo veículo
-PUT    /veiculo/atualizar/{id}         - Atualizar veículo
-DELETE /veiculo/excluir/{id}           - Excluir veículo
+POST   /veiculo                        - Cadastrar novo veículo
+PUT    /veiculo/{id}                   - Atualizar veículo
+DELETE /veiculo/{id}                   - Excluir veículo
 ```
 
 ### Mercadoria
 ```
 GET    /mercadoria                     - Listar todas as mercadorias
 GET    /mercadoria/{id}                - Obter mercadoria por ID
-POST   /mercadoria/cadastro            - Cadastrar nova mercadoria
-PUT    /mercadoria/atualizar/{id}      - Atualizar mercadoria
-DELETE /mercadoria/excluir/{id}        - Excluir mercadoria
+POST   /mercadoria                     - Cadastrar nova mercadoria
+PUT    /mercadoria/{id}                - Atualizar mercadoria
+DELETE /mercadoria/{id}                - Excluir mercadoria
 ```
 
 ### Servico
 ```
 GET    /servico                        - Listar todos os serviços
 GET    /servico/{id}                   - Obter serviço por ID
-POST   /servico/cadastro               - Cadastrar novo serviço
-PUT    /servico/atualizar/{id}         - Atualizar serviço
-DELETE /servico/excluir/{id}           - Excluir serviço
+POST   /servico                        - Cadastrar novo serviço
+PUT    /servico/{id}                   - Atualizar serviço
+DELETE /servico/{id}                   - Excluir serviço
 ```
 
 ### Venda
 ```
 GET    /venda                          - Listar todas as vendas
 GET    /venda/{id}                     - Obter venda por ID
-POST   /venda/cadastro                 - Cadastrar nova venda
-PUT    /venda/atualizar/{id}           - Atualizar venda
-DELETE /venda/excluir/{id}             - Excluir venda
+POST   /venda                          - Cadastrar nova venda
+PUT    /venda/{id}                     - Atualizar venda
+DELETE /venda/{id}                     - Excluir venda
 POST   /venda/{vendaId}/funcionario/{funcionarioId}  - Vincular funcionário 
 POST   /venda/{vendaId}/cliente/{clienteId}          - Vincular cliente
 POST   /venda/{vendaId}/veiculo/{veiculoId}          - Vincular veículo 
@@ -115,9 +120,9 @@ Seguem o padrão CRUD básico:
 ```
 GET    /{recurso}                      - Listar
 GET    /{recurso}/{id}                 - Obter por ID
-POST   /{recurso}/cadastro             - Cadastrar
-PUT    /{recurso}/atualizar/{id}       - Atualizar
-DELETE /{recurso}/excluir/{id}         - Excluir
+POST   /{recurso}                      - Cadastrar
+PUT    /{recurso}/{id}                 - Atualizar
+DELETE /{recurso}/{id}                 - Excluir
 
 GET    /gerson                      - Retornar a imagem gerson
 GET    /gerson2                     - Retornar a imagem gerson 2

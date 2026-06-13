@@ -24,34 +24,24 @@ public class ClientesService {
 
     @SuppressWarnings("unchecked")
     public List<Map<String, Object>> buscarClientesDaEmpresa(Long empresaId, String authorizationHeader) {
-        String url = automanagerApiUrl + "/empresa/" + empresaId;
+        String url = automanagerApiUrl + "/empresa/" + empresaId + "/clientes";
 
         HttpHeaders headers = new HttpHeaders();
         headers.set("Authorization", authorizationHeader);
 
         HttpEntity<String> entity = new HttpEntity<>(headers);
 
-        ResponseEntity<Map> response = restTemplate.exchange(
+        ResponseEntity<List> response = restTemplate.exchange(
                 url,
                 HttpMethod.GET,
                 entity,
-                Map.class
+                List.class
         );
 
-        Map<String, Object> empresa = response.getBody();
+        List<Map<String, Object>> clientes = response.getBody();
 
-        if (empresa == null || !empresa.containsKey("usuarios")) {
+        if (clientes == null) {
             return new ArrayList<>();
-        }
-
-        List<Map<String, Object>> usuarios = (List<Map<String, Object>>) empresa.get("usuarios");
-        List<Map<String, Object>> clientes = new ArrayList<>();
-
-        for (Map<String, Object> usuario : usuarios) {
-            List<String> perfis = (List<String>) usuario.get("perfil");
-            if (perfis != null && perfis.contains("CLIENTE")) {
-                clientes.add(usuario);
-            }
         }
 
         return clientes;

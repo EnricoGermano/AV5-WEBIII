@@ -72,7 +72,7 @@ public class VendaControle {
         return ResponseEntity.ok(venda);
     }
 
-    @PostMapping("/cadastro")
+    @PostMapping
     public ResponseEntity<Venda> cadastrarVenda(@RequestBody Venda venda) {
         if (venda.getId() != null) {
             return ResponseEntity.badRequest().build();
@@ -85,7 +85,7 @@ public class VendaControle {
         return ResponseEntity.status(HttpStatus.CREATED).body(salva);
     }
 
-    @PutMapping("/atualizar/{id}")
+    @PutMapping("/{id}")
     public ResponseEntity<Venda> atualizarVenda(@PathVariable Long id, @RequestBody Venda venda) {
         Optional<Venda> opt = repositorio.findById(id);
         if (opt.isEmpty()) {
@@ -106,7 +106,7 @@ public class VendaControle {
         return ResponseEntity.ok(atualizada);
     }
 
-    @DeleteMapping("/excluir/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<Void> excluirVenda(@PathVariable Long id) {
         if (!repositorio.existsById(id)) {
             return ResponseEntity.notFound().build();

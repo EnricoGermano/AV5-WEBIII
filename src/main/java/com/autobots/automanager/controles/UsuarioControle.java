@@ -58,7 +58,7 @@ public class UsuarioControle {
         return ResponseEntity.ok(usuario);
     }
 
-    @PostMapping("/cadastro")
+    @PostMapping
     @PreAuthorize("@autorizacaoService.isInterno(authentication)")
     public ResponseEntity<Usuario> cadastrarUsuario(@RequestBody Usuario usuario) {
         if (usuario.getId() != null) {
@@ -69,7 +69,7 @@ public class UsuarioControle {
         return ResponseEntity.status(HttpStatus.CREATED).body(salvo);
     }
 
-    @PutMapping("/atualizar/{id}")
+    @PutMapping("/{id}")
     @PreAuthorize("@autorizacaoService.isInterno(authentication)")
     public ResponseEntity<Usuario> atualizarUsuario(@PathVariable Long id, @RequestBody Usuario usuario) {
         Optional<Usuario> opt = repositorio.findById(id);
@@ -91,7 +91,7 @@ public class UsuarioControle {
         return ResponseEntity.ok(atualizado);
     }
 
-    @DeleteMapping("/excluir/{id}")
+    @DeleteMapping("/{id}")
     @PreAuthorize("@autorizacaoService.isInterno(authentication)")
     public ResponseEntity<Void> excluirUsuario(@PathVariable Long id) {
         if (!repositorio.existsById(id)) {

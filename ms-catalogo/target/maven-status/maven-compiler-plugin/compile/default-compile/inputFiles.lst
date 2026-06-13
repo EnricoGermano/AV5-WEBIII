@@ -1,6 +1,6 @@
-C:\Users\enric\OneDrive\Documents\GitHub\AV4-WEBIII\ms-catalogo\src\main\java\com\autobots\mscatalogo\seguranca\SecurityConfig.java
-C:\Users\enric\OneDrive\Documents\GitHub\AV4-WEBIII\ms-catalogo\src\main\java\com\autobots\mscatalogo\controle\CatalogoControle.java
-C:\Users\enric\OneDrive\Documents\GitHub\AV4-WEBIII\ms-catalogo\src\main\java\com\autobots\mscatalogo\seguranca\JwtProvider.java
-C:\Users\enric\OneDrive\Documents\GitHub\AV4-WEBIII\ms-catalogo\src\main\java\com\autobots\mscatalogo\MsCatalogoApplication.java
-C:\Users\enric\OneDrive\Documents\GitHub\AV4-WEBIII\ms-catalogo\src\main\java\com\autobots\mscatalogo\servico\CatalogoService.java
-C:\Users\enric\OneDrive\Documents\GitHub\AV4-WEBIII\ms-catalogo\src\main\java\com\autobots\mscatalogo\seguranca\JwtAuthenticationFilter.java
+C:\Users\enric\OneDrive\Documents\GitHub\AV5-WEBIII\ms-catalogo\src\main\java\com\autobots\mscatalogo\MsCatalogoApplication.java
+C:\Users\enric\OneDrive\Documents\GitHub\AV5-WEBIII\ms-catalogo\src\main\java\com\autobots\mscatalogo\servico\CatalogoService.java
+C:\Users\enric\OneDrive\Documents\GitHub\AV5-WEBIII\ms-catalogo\src\main\java\com\autobots\mscatalogo\seguranca\JwtProvider.java
+C:\Users\enric\OneDrive\Documents\GitHub\AV5-WEBIII\ms-catalogo\src\main\java\com\autobots\mscatalogo\seguranca\JwtAuthenticationFilter.java
+C:\Users\enric\OneDrive\Documents\GitHub\AV5-WEBIII\ms-catalogo\src\main\java\com\autobots\mscatalogo\seguranca\SecurityConfig.java
+C:\Users\enric\OneDrive\Documents\GitHub\AV5-WEBIII\ms-catalogo\src\main\java\com\autobots\mscatalogo\controle\CatalogoControle.java

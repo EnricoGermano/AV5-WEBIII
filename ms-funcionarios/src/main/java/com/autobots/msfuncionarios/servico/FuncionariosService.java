@@ -32,46 +32,24 @@ public class FuncionariosService {
 
     @SuppressWarnings("unchecked")
     public List<Map<String, Object>> buscarFuncionarios(Long empresaId, String authorizationHeader) {
-        String url = automanagerApiUrl + "/empresa/" + empresaId;
+        String url = automanagerApiUrl + "/empresa/" + empresaId + "/funcionarios";
 
         HttpHeaders headers = new HttpHeaders();
         headers.set("Authorization", authorizationHeader);
         HttpEntity<String> entity = new HttpEntity<>(headers);
 
-        ResponseEntity<Map> response = restTemplate.exchange(
+        ResponseEntity<List> response = restTemplate.exchange(
                 url,
                 HttpMethod.GET,
                 entity,
-                Map.class
+                List.class
         );
 
-        Map<String, Object> empresa = response.getBody();
-        if (empresa == null) {
+        List<Map<String, Object>> funcionarios = response.getBody();
+        if (funcionarios == null) {
             return new ArrayList<>();
-        }
-
-        List<Map<String, Object>> usuarios = (List<Map<String, Object>>) empresa.get("usuarios");
-        if (usuarios == null) {
-            return new ArrayList<>();
-        }
-
-        List<Map<String, Object>> funcionarios = new ArrayList<>();
-        for (Map<String, Object> usuario : usuarios) {
-            List<String> perfil = (List<String>) usuario.get("perfil");
-            if (perfil != null && possuiPerfilFuncionario(perfil)) {
-                funcionarios.add(usuario);
-            }
         }
 
         return funcionarios;
-    }
-
-    private boolean possuiPerfilFuncionario(List<String> perfis) {
-        for (String perfil : perfis) {
-            if (PERFIS_FUNCIONARIO.contains(perfil)) {
-                return true;
-            }
-        }
-        return false;
     }
 }
